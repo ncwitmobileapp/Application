@@ -66,5 +66,17 @@
 
     <!-- Notification message [CHAR LIMIT=NONE] -->
     <string name="unregistration_succeeded">Unegistered %1$s for C2DM messaging.</string>
+    <string name="ForgotPassword">Forgot Your Password?</string>
+    <string name="Register">New Member? Register Here!</string>
+    <string name="Copyright1">©National Center for Women &amp; Information Technology</string>
+    <string name="Login">Login</string>
+    <string name="Example">Hello</string>
+    <string name="Registration">Registration</string>
+    <string name="AwardWinner">NCWIT Award Winner? Skip to &quot;Birthday.&quot; Otherwise, enter your referral code now.</string>
+    <string name="ReferralCode">Referral Code</string>
+    <string name="Birthday">Birthday</string>
+    <string name="Month">MM</string>
+    <string name="Date">DD</string><string name="Year">YYYY</string>
+    
 
 </resources>
