@@ -41,6 +41,18 @@ public final class R {
         public static final int main_menu=0x7f050000;
     }
     public static final class string {
+        public static final int AwardWinner=0x7f04001c;
+        public static final int Birthday=0x7f04001e;
+        public static final int Copyright1=0x7f040018;
+        public static final int Date=0x7f040020;
+        public static final int Example=0x7f04001a;
+        public static final int ForgotPassword=0x7f040016;
+        public static final int Login=0x7f040019;
+        public static final int Month=0x7f04001f;
+        public static final int ReferralCode=0x7f04001d;
+        public static final int Register=0x7f040017;
+        public static final int Registration=0x7f04001b;
+        public static final int Year=0x7f040021;
         /**  Menu item text [CHAR LIMIT=NONE] 
          */
         public static final int accounts=0x7f040000;
