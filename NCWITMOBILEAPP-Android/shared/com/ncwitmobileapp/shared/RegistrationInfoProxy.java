@@ -16,7 +16,7 @@ package com.ncwitmobileapp.shared;
 
 import com.google.web.bindery.requestfactory.shared.ProxyForName;
 import com.google.web.bindery.requestfactory.shared.ValueProxy;
-//sds
+
 /**
  * A proxy object containing device registration information:
  * email account name, device id, and device registration id.
