@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+    
+    <ImageView
+        android:id="@+id/title"
+ 
+ 
+    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/banner1trans" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+</ImageView>
+    <EditText
+        android:id="@+id/username"
+        android:hint="  username"
+        android:layout_width="252dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:background="@drawable/text"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:inputType="textEmailAddress" android:layout_marginBottom="20dp"/>
+    <EditText
+        android:id="@+id/password"
+        android:hint=" password"
+        android:layout_width="252dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:background="@drawable/text"
+        android:ems="10"
+        android:inputType="textPassword" android:cursorVisible="true"/>
+
+    <Button
+        android:id="@+id/forgotpassword"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@android:color/transparent"
+        android:text="@string/ForgotPassword"
+        android:textColor="#FFFFFF" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+</TextView>
+
+<Button
+    android:id="@+id/register"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/Register" 
+ 	android:background="@android:color/transparent" android:textColor="#FFFFFF" android:layout_marginTop="24dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="154dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@drawable/login"
+        android:text="@string/Login"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/Copyright1"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:layout_marginTop="85dp" android:textSize="12sp"/>
+
+</LinearLayout> 
