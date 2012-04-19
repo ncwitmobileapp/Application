@@ -12,30 +12,47 @@ public final class R {
     }
     public static final class drawable {
         public static final int app_icon=0x7f020000;
-        public static final int gradient=0x7f020001;
-        public static final int ic_mailboxes_accounts=0x7f020002;
-        public static final int status_icon=0x7f020003;
+        public static final int background=0x7f020001;
+        public static final int banner1trans=0x7f020002;
+        public static final int gradient=0x7f020003;
+        public static final int ic_mailboxes_accounts=0x7f020004;
+        public static final int login=0x7f020005;
+        public static final int logo=0x7f020006;
+        public static final int status_icon=0x7f020007;
+        public static final int text=0x7f020008;
     }
     public static final class id {
+        public static final int FailedMessage=0x7f06000b;
+        public static final int backtologin=0x7f06000c;
         public static final int connect=0x7f060006;
         public static final int connect_footer=0x7f060005;
         public static final int connect_text=0x7f060001;
+        public static final int copyright=0x7f060016;
         public static final int disconnect=0x7f060009;
         public static final int disconnect_footer=0x7f060008;
         public static final int disconnect_text=0x7f060007;
         public static final int divider=0x7f060003;
+        public static final int forgotpassword=0x7f060013;
         public static final int header=0x7f060000;
-        public static final int hello_world=0x7f06000c;
-        public static final int hello_world_info=0x7f06000a;
-        public static final int say_hello=0x7f06000b;
+        public static final int hello_world=0x7f06000f;
+        public static final int hello_world_info=0x7f06000d;
+        public static final int imageView1=0x7f06000a;
+        public static final int login=0x7f060015;
+        public static final int password=0x7f060012;
+        public static final int register=0x7f060014;
+        public static final int say_hello=0x7f06000e;
         public static final int select_account=0x7f060004;
         public static final int select_text=0x7f060002;
+        public static final int title=0x7f060010;
+        public static final int username=0x7f060011;
     }
     public static final class layout {
         public static final int account=0x7f030000;
         public static final int connect=0x7f030001;
         public static final int disconnect=0x7f030002;
-        public static final int hello_world=0x7f030003;
+        public static final int failedlogin=0x7f030003;
+        public static final int hello_world=0x7f030004;
+        public static final int logins=0x7f030005;
     }
     public static final class menu {
         public static final int main_menu=0x7f050000;
@@ -49,6 +66,7 @@ public final class R {
         public static final int ForgotPassword=0x7f040016;
         public static final int Login=0x7f040019;
         public static final int Month=0x7f04001f;
+        public static final int Pleasetryagain=0x7f040024;
         public static final int ReferralCode=0x7f04001d;
         public static final int Register=0x7f040017;
         public static final int Registration=0x7f04001b;
@@ -65,6 +83,7 @@ public final class R {
         /**  Dialog title text [CHAR LIMIT=NONE] 
          */
         public static final int attention=0x7f040003;
+        public static final int backtologin=0x7f040023;
         /**  Button text [CHAR LIMIT=NONE] 
          */
         public static final int connect=0x7f040004;
@@ -92,6 +111,7 @@ public final class R {
         /**  Footer text for "Disconnect" screen [CHAR LIMIT=NONE] 
          */
         public static final int do_you_want_to_disconnect=0x7f04000c;
+        public static final int failedMessage=0x7f040022;
         /**  Initial "hello, world" informational message [CHAR LIMIT=NONE] 
          */
         public static final int hello_world_info_text=0x7f04000d;
