@@ -128,11 +128,9 @@ public class NCWITMOBILEAPPActivity extends Activity {
     private void setHelloWorldScreenContent() {
         setContentView(R.layout.hello_world);
 
-        Log.i(TAG, "STEP 1");
         final TextView helloWorld = (TextView) findViewById(R.id.hello_world);
-        Log.i(TAG, "STEP 2");
         final Button sayHelloButton = (Button) findViewById(R.id.say_hello);
-        Log.i(TAG, "STEP 3");sayHelloButton.setOnClickListener(new OnClickListener() {
+        sayHelloButton.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 sayHelloButton.setEnabled(false);
                 helloWorld.setText(R.string.contacting_server);
