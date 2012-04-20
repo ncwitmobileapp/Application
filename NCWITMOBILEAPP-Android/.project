@@ -31,11 +31,4 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>com.google.gdt.eclipse.appengine.rpc.appengineConnectedNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>shared</name>
-			<type>2</type>
-			<location>C:/ncwitmobileap/Application/NCWITMOBILEAPP-Android/shared</location>
-		</link>
-	</linkedResources>
 </projectDescription>
