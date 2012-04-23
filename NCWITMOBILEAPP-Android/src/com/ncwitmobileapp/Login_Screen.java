@@ -34,27 +34,26 @@ public class Login_Screen extends Activity
 	public void onCreate(Bundle savedInstanceState)
 	{
 	    requestWindowFeature(Window.FEATURE_NO_TITLE); 
-		super.onCreate(savedInstanceState);		
-		setContentView(R.layout.logins);
+        super.onCreate(savedInstanceState);		 
+        setContentView(R.layout.logins);
 			
 	    final Button login = (Button)findViewById(R.id.login);
 	    login.setOnClickListener(new View.OnClickListener() {
-			public void onClick(View lb) {
-				//communicate with App Engine
-				//goes to the Menu Page
+            public void onClick(View lb) {
+                //communicate with App Engine
+                //goes to the Menu Page
 				
-				//gets username and password from user(Editables)
+                //gets username and password from user(Editables)
 				
-				String username;
-				String password;
+                String username;
+                String password;
+                EditText un=(EditText)findViewById(R.id.username);
+                EditText ps=(EditText)findViewById(R.id.password);
 				
-				EditText un=(EditText)findViewById(R.id.username);
-				EditText ps=(EditText)findViewById(R.id.password);
+                username=un.getText().toString();
+                password=ps.getText().toString();
 				
-				username=un.getText().toString();
-				password=ps.getText().toString();
-				
-				login.setEnabled(false);
+                login.setEnabled(false);
                 Log.i(TAG, "preparing request to send to server");
 
                 // Use an AsyncTask to avoid blocking the UI thread
@@ -82,34 +81,24 @@ public class Login_Screen extends Activity
                         return message;
                     }
 
-				}.execute();
+                }.execute();
 			
-			}
+            }
 	    });
 	    
 	    Button register = (Button)findViewById(R.id.register);
-	    register.setOnClickListener(new View.OnClickListener(){
-			public void onClick(View lb)
-			{
-				//goes to the Registration Page
-			}
-			
-	    });
+	    register.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View lb) {
+                //goes to the Registration Page
+            }
+        });
 	
 	    Button forgotpassword = (Button)findViewById(R.id.forgotpassword);
-	    forgotpassword.setOnClickListener(new View.OnClickListener(){
-			public void onClick(View lb)
-			{
-				//goes to the Forgot Password Page
-			}
-			
-	    });
-	
-	
-	
-	
+	    forgotpassword.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View lb) {
+                //goes to the Forgot Password Page
+            }
+        });
 	}
-	
-	
 }
 
