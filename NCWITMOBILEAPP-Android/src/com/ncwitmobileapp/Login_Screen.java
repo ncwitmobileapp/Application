@@ -33,12 +33,12 @@ public class Login_Screen extends Activity
     @Override
 	public void onCreate(Bundle savedInstanceState)
 	{
-	    requestWindowFeature(Window.FEATURE_NO_TITLE); 
+        requestWindowFeature(Window.FEATURE_NO_TITLE); 
         super.onCreate(savedInstanceState);		 
         setContentView(R.layout.logins);
 			
-	    final Button login = (Button)findViewById(R.id.login);
-	    login.setOnClickListener(new View.OnClickListener() {
+        final Button login = (Button)findViewById(R.id.login);
+        login.setOnClickListener(new View.OnClickListener() {
             public void onClick(View lb) {
                 //communicate with App Engine
                 //goes to the Menu Page
@@ -84,21 +84,21 @@ public class Login_Screen extends Activity
                 }.execute();
 			
             }
-	    });
+        });
 	    
-	    Button register = (Button)findViewById(R.id.register);
-	    register.setOnClickListener(new View.OnClickListener() {
+        Button register = (Button)findViewById(R.id.register);
+        register.setOnClickListener(new View.OnClickListener() {
             public void onClick(View lb) {
                 //goes to the Registration Page
             }
         });
 	
-	    Button forgotpassword = (Button)findViewById(R.id.forgotpassword);
-	    forgotpassword.setOnClickListener(new View.OnClickListener() {
+        Button forgotpassword = (Button)findViewById(R.id.forgotpassword);
+        forgotpassword.setOnClickListener(new View.OnClickListener() {
             public void onClick(View lb) {
                 //goes to the Forgot Password Page
             }
         });
-	}
+    }
 }
 
