@@ -14,6 +14,8 @@
  *******************************************************************************/
 package com.ncwitmobileapp;
 
+import com.ncwitmobileapp.R;
+
 import com.google.android.c2dm.C2DMessaging;
 
 import org.apache.http.Header;
