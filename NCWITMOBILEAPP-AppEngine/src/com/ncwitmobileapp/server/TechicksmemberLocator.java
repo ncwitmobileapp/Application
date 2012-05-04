@@ -36,4 +36,3 @@ public class TechicksmemberLocator extends Locator<Techicksmember, Void> {
 	}
 
 }
-
