@@ -34,6 +34,13 @@ withOperation(new OperationKey("R06iT2IdKd_$Kom2eZCBjbcihlI="),
   .withMethodName("unregister")
   .withRequestContext("com.ncwitmobileapp.client.MyRequestFactory$RegistrationInfoRequest")
   .build());
+withOperation(new OperationKey("1WEQw0nFJej3MKWL$jzxDmTNYIo="),
+  new OperationData.Builder()
+  .withClientMethodDescriptor("(Ljava/lang/String;Ljava/lang/String;)Lcom/google/web/bindery/requestfactory/shared/Request;")
+  .withDomainMethodDescriptor("(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;")
+  .withMethodName("getAuthenticatedTechicksmember")
+  .withRequestContext("com.ncwitmobileapp.client.MyRequestFactory$NCWITMOBILEAPPRequest")
+  .build());
 withRawTypeToken("8KVVbwaaAtl6KgQNlOTsLCp9TIU=", "com.google.web.bindery.requestfactory.shared.ValueProxy");
 withRawTypeToken("FXHD5YU0TiUl3uBaepdkYaowx9k=", "com.google.web.bindery.requestfactory.shared.BaseProxy");
 withRawTypeToken("Lpq7rMVoIj0Cw3PaHOOyKTV6BM4=", "com.ncwitmobileapp.shared.MessageProxy");
