@@ -2,6 +2,7 @@ package com.ncwitmobileapp;
 import com.ncwitmobileapp.R;
 import com.ncwitmobileapp.client.MyRequestFactory;
 import com.ncwitmobileapp.client.MyRequestFactory.HelloWorldRequest;
+import com.ncwitmobileapp.client.MyRequestFactory.NCWITMOBILEAPPRequest;
 
 
 import com.google.gwt.core.client.GWT;
@@ -45,13 +46,11 @@ public class Login_Screen extends Activity
 				
                 //gets username and password from user(Editables)
 				
-                String username;
-                String password;
                 EditText un=(EditText)findViewById(R.id.username);
                 EditText ps=(EditText)findViewById(R.id.password);
 				
-                username=un.getText().toString();
-                password=ps.getText().toString();
+                final String username = un.getText().toString();
+                final String password = ps.getText().toString();
 				
                 login.setEnabled(false);
                 Log.i(TAG, "preparing request to send to server");
@@ -64,9 +63,9 @@ public class Login_Screen extends Activity
                     protected String doInBackground(Void... arg0) {
                         MyRequestFactory requestFactory = Util.getRequestFactory(mContext,
                                 MyRequestFactory.class);
-                        final HelloWorldRequest request = requestFactory.helloWorldRequest();
+                        final NCWITMOBILEAPPRequest request = requestFactory.nCWITMOBILEAPPRequest();
                         Log.i(TAG, "Sending request to server");
-                        request.getMessage().fire(new Receiver<String>() {
+                        request.getAuthenticatedTechicksmember(username, password).fire(new Receiver<String>() {
                             @Override
                             public void onFailure(ServerFailure error) {
                                 message = "Failure: " + error.getMessage();

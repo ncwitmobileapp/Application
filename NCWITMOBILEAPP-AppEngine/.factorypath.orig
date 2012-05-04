@@ -1,7 +1,0 @@
-<factorypath>
-<<<<<<< HEAD
-    <factorypathentry kind="EXTJAR" id="C:\Users\Sam\Desktop\eclipse\plugins\com.google.gwt.eclipse.sdkbundle_2.4.0.v201202290255-rel-r37\gwt-2.4.0\requestfactory-apt.jar" enabled="true" runInBatchMode="false"/>
-=======
-    <factorypathentry kind="VARJAR" id="ECLIPSE_HOME/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201203300216-rel-r37/gwt-2.4.0/requestfactory-apt.jar" enabled="true" runInBatchMode="false"/>
->>>>>>> upstream/master
-</factorypath>

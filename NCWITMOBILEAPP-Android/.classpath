@@ -11,7 +11,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
-	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry kind="lib" path="lib/requestfactory-client.jar"/>
 	<classpathentry kind="var" path="ECLIPSE_HOME/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201203300216-rel-r37/gwt-2.4.0/gwt-user.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
