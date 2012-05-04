@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bluegradient" >
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/banner1trans" 
+        android:background="@drawable/greengradient" 
+        android:contentDescription="@string/Logo"/>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:text="@string/Registration"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35dp" 
+        android:textColor="#FF8F00"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/FirstName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.97"
+                android:ems="10"
+                android:inputType="textPersonName" 
+                android:background="@drawable/greengradient" 
+                android:hint="@string/FirstName"/>
+
+            <EditText
+                android:id="@+id/LastName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.97"
+                android:ems="10"
+                android:inputType="textPersonName" 
+                android:background="@drawable/greengradient" android:hint="@string/LastName"/>
+
+            <LinearLayout
+                android:id="@+id/tosLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.97" >
+
+                <CheckBox
+                    android:id="@+id/AcceptTOS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF8F00" />
+
+                <TextView
+                    android:id="@+id/Terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TOS"
+                    android:textAppearance="?android:attr/textAppearanceSmall" 
+                    android:textColor="#FF8F00"/>
+
+            </LinearLayout>
+			<EditText
+			    android:id="@+id/emailAddress"
+			    android:layout_width="match_parent"
+			    android:layout_height="40dp"
+			    android:layout_margin="5dp"
+			    android:layout_weight="0.97"
+			    android:background="@drawable/greengradient"
+			    android:inputType="textEmailAddress" android:hint="@string/EmailAddress"/>
+
+			<EditText
+			    android:id="@+id/password"
+			    android:layout_width="match_parent"
+			    android:layout_height="40dp"
+			    android:layout_margin="5dp"
+			    android:layout_weight="0.97"
+			    android:background="@drawable/greengradient"
+			    android:inputType="textPassword" 
+			    android:hint="@string/Password" />
+
+			<EditText
+			    android:id="@+id/PasswordConfirm"
+			    android:layout_width="match_parent"
+			    android:layout_height="40dp"
+			    android:layout_margin="5dp"
+			    android:layout_weight="0.97"
+			    android:background="@drawable/greengradient"
+			    android:inputType="textPassword" android:hint="@string/PasswordConfirm"/>
+
+			<TextView
+			    android:id="@+id/Winner"
+			    android:layout_width="235dp"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_horizontal"
+			    android:layout_weight="4.84"
+			    android:gravity="center"
+			    android:text="@string/NCWITWinner"
+			    android:textAppearance="?android:attr/textAppearanceMedium"
+			    android:textColor="#FF8F00"
+			    android:textSize="15dp" />
+
+			<LinearLayout
+			    android:id="@+id/linearLayout2"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="0.97" >
+
+			    <RadioButton
+			        android:id="@+id/HaveCode"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:text="@string/ReferralCode"
+			        android:textColor="#FF8F00" />
+
+			    <EditText
+			        android:id="@+id/ReferralCode"
+			        android:layout_width="0dip"
+			        android:layout_height="40dp"
+			        android:layout_margin="5dp"
+			        android:layout_weight="1"
+			        android:background="@drawable/greengradient"
+			        android:gravity="center"
+			        android:hint="@string/ReferralCode" />
+			</LinearLayout>
+
+			<LinearLayout
+			    android:id="@+id/linearLayout3"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="0.97" >
+
+			    <TextView
+			        android:id="@+id/Birthday"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center_vertical"
+			        android:layout_margin="5dp"
+			        android:text="@string/Birthday"
+			        android:textAppearance="?android:attr/textAppearanceMedium"
+			        android:textColor="#FF8F00" />
+
+			    <Button
+			        android:id="@+id/SelectBirthday"
+			        android:layout_width="match_parent"
+			        android:layout_height="40dp"
+			        android:layout_margin="5dp"
+			        android:background="@drawable/greengradient"
+			        android:hint="@string/SelectBDay"
+			        android:textSize="18dp" />
+			</LinearLayout>
+
+
+		    			<Spinner
+			    android:id="@+id/SelectSecurityQuestion"
+			    android:layout_width="match_parent"
+			    android:layout_height="40dp"
+			    android:layout_margin="5dp"
+			    android:layout_weight="0.97"
+			    android:background="@drawable/greengradient" />
+
+			<EditText
+			    android:id="@+id/EnterSecurityAnswer"
+			    android:layout_width="match_parent"
+			    android:layout_height="40dp"
+			    android:layout_margin="5dp"
+			    android:layout_weight="0.97" 
+			    android:background="@drawable/greengradient" 
+			    android:hint="@string/SecurityAnswer" />
+
+		    <Button
+		        android:id="@+id/Register"
+		        android:layout_width="match_parent"
+		        android:layout_height="40dp"
+		        android:layout_gravity="center_horizontal"
+		        android:background="@drawable/greengradient" 
+		        android:hint="@string/Register"/>
+		    
+        </LinearLayout>
+
+    </ScrollView>
+
+    
+</LinearLayout>
