@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy source folder &apos;shared&apos; to &apos;NCWITMOBILEAPP-Android&apos;&#x0D;&#x0A;- Original project: &apos;NCWITMOBILEAPP-AppEngine&apos;&#x0D;&#x0A;- Destination element: &apos;NCWITMOBILEAPP-Android&apos;&#x0D;&#x0A;- Original element: &apos;NCWITMOBILEAPP-AppEngine/shared&apos;" description="Copy source folder" destination="=NCWITMOBILEAPP-Android" element1="/shared" flags="6" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyRoots" roots="1" stamp="1333766511875" version="1.0"/>
-</session>
