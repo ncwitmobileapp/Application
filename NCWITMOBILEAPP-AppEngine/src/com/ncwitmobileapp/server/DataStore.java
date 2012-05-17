@@ -14,16 +14,16 @@ import javax.jdo.PersistenceManager;
 import javax.jdo.Query;
 import javax.servlet.ServletContext;
 
-public class Datastore {
+public class DataStore {
 
 
   /**
    * Remove this object from the data store.
    */
-  public void delete(String Username) {
+  public void delete(Long id) {
     PersistenceManager pm = PMF.get().getPersistenceManager();
     try {
-      Techicksmember item = pm.getObjectById(Techicksmember.class, Username);
+      Techicksmember item = pm.getObjectById(Techicksmember.class, id);
       pm.deletePersistent(item);
     } finally {
       pm.close();
@@ -40,8 +40,8 @@ public class Datastore {
       PersistenceManager pm = PMF.get().getPersistenceManager();
       try {
         Query query = pm.newQuery("select from " + Techicksmember.class.getName()
-            + " where Username==" + Username.toString() + " && EmailAddress=='" + Techicksmember.getEmailAddress() + "'");
-        List list = (List) query.execute();
+            + " where Username==" + Username.toString());
+        List<Techicksmember> list = (List<Techicksmember>) query.execute();
         return (Techicksmember) (list.size() == 0 ? null : list.get(0));
       } catch (RuntimeException e) {
         System.out.println(e);
@@ -52,12 +52,11 @@ public class Datastore {
     }
 
 @SuppressWarnings("unchecked")
-public List findAll() {
+public List <Techicksmember> findAll() {
   PersistenceManager pm = PMF.get().getPersistenceManager();
   try {
-      Query query = pm.newQuery("select from " + Techicksmember.class.getName()
-          + " where emailAddress=='" + Techicksmember.getEmailAddress() + "'");
-      List list = (List) query.execute();
+      Query query = pm.newQuery("select from " + Techicksmember.class.getName());
+      List<Techicksmember> list = (List<Techicksmember>)query.execute();
       if (list.size() == 0) {
           list.size();
         }
@@ -74,20 +73,17 @@ public List findAll() {
   /**
    * Persist this object in the datastore.
    */
-  public Techicksmember update(Techicksmember item) {
+  public Techicksmember updateTechicksmember(Techicksmember item) {
     //set the user id (not sure this is where we should be doing this)
-    item.setName(item.getName());
+    item.setUserName(item.getUserName());
     item.setEmailAddress(item.getEmailAddress());
     item.setBirthday(item.getBirthday());
     item.setNCWITmember(item.getNCWITmember());
-    item.setPassword(item.getPassword());
+    item.setUserPassword(item.getUserPassword());
     item.setReferralCode(item.getReferralCode());
     item.setSecurityAnswer(item.getSecurityAnswer());
     item.setSecurityQuestion(item.getSecurityQuestion());
   
-    
-    
-    
     PersistenceManager pm = PMF.get().getPersistenceManager();
     try {
       pm.makePersistent(item);
