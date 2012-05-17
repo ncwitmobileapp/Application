@@ -18,7 +18,7 @@ public class TechicksmemberService {
 	@ServiceMethod
 	public static Techicksmember createTechicksmember(Techicksmember member) {
 		log.info("CreateTechicksmember called");
-		return db.createTechicksmember(member);
+		return db.updateTechicksmember(member);
 	}
 
 	@ServiceMethod
@@ -33,14 +33,14 @@ public class TechicksmemberService {
 
 	@ServiceMethod
 	public static void deleteTechicksmember(Techicksmember member) {
-		db.deleteTechicksmember(member.getId());
+		db.delete(member.getId());
 		return ;
 
 	}
 
 	@ServiceMethod
 	public static  List<Techicksmember> queryTechicksmembers() {
-		return db.findAllTechicksmembers();
+		return db.findAll();
 	}
 
 }
