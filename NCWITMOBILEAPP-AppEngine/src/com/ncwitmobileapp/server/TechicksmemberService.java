@@ -1,31 +1,46 @@
 package com.ncwitmobileapp.server;
+
 import java.util.List;
+import java.util.logging.Logger;
 
-public class TechicksmemberService 
-{
+import org.mortbay.log.Log;
+
+import com.ncwitmobileapp.annotation.ServiceMethod;
+
+
+public class TechicksmemberService {
 	
-	static Datastore db = new Datastore();
-	public static Techicksmember createTechicksmember() 
-	{
-		return db.update(new Techicksmember());      
+	private static DataStore db = new DataStore();
 	
+	private static final Logger log =
+	        Logger.getLogger(DeviceInfo.class.getName());
+	
+	@ServiceMethod
+	public static Techicksmember createTechicksmember(Techicksmember member) {
+		log.info("CreateTechicksmember called");
+		return db.createTechicksmember(member);
 	}
-	
-	public static Techicksmember readTechicksmember(String user)
-	{
-		return db.find(user);
+
+	@ServiceMethod
+	public static Techicksmember readTechicksmember(Long id) {
+		return null;
 	}
-	
-	public static Techicksmember updateTechicksmeber(Techicksmember member){
-		return db.update(member);
+
+	@ServiceMethod
+	public static Techicksmember updateTechicksmember(Techicksmember techicksmember) {
+		return null;
 	}
-	
-	public static void deleteTechicksmember(String user){
-		db.delete(user);
+
+	@ServiceMethod
+	public static void deleteTechicksmember(Techicksmember member) {
+		db.deleteTechicksmember(member.getId());
+		return ;
+
 	}
-	
-	public static List<Techicksmember> queryTechicksmembers() {
-		return db.findAll();
+
+	@ServiceMethod
+	public static  List<Techicksmember> queryTechicksmembers() {
+		return db.findAllTechicksmembers();
 	}
+
 }
-
