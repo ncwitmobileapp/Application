@@ -21,7 +21,9 @@ import com.google.web.bindery.requestfactory.shared.RequestFactory;
 import com.google.web.bindery.requestfactory.shared.ServiceName;
 
 import com.ncwitmobileapp.shared.MessageProxy;
+import com.ncwitmobileapp.shared.NCWITMOBILEAPPRequest;
 import com.ncwitmobileapp.shared.TechicksmemberProxy;
+import com.ncwitmobileapp.shared.TechicksmemberRequest;
 import com.ncwitmobileapp.shared.RegistrationInfoProxy;
 
 public interface MyRequestFactory extends RequestFactory {
@@ -33,11 +35,12 @@ public interface MyRequestFactory extends RequestFactory {
 		 */
 		Request<String> getMessage();
 	}
-	
+
 	@ServiceName("com.ncwitmobileapp.server.NCWITMOBILEAPPService")
-	public interface NCWITMOBILEAPPRequest	extends RequestContext {
-		
-		Request<String> getAuthenticatedTechicksmember(String userName, String password);
+	public interface NCWITMOBILEAPPRequest extends RequestContext {
+
+		Request<String> getAuthenticatedTechicksmember(String userName,
+				String password);
 	}
 
 	@ServiceName("com.ncwitmobileapp.server.RegistrationInfo")
@@ -69,4 +72,6 @@ public interface MyRequestFactory extends RequestFactory {
 
 	NCWITMOBILEAPPRequest nCWITMOBILEAPPRequest();
 
-}
+	TechicksmemberRequest techicksmemberRequest();
+
+}	
