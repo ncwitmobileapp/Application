@@ -1,3 +1,4 @@
+
 package com.ncwitmobileapp.server;
 
 import java.util.List;
@@ -25,8 +26,21 @@ public class NCWITMOBILEAPPService {
 	public static String getAuthenticatedTechicksmember(String userName, String password) {
 		 log.info("Called authenticateTechicksmember");
 		 log.info("userName = " + userName + " password = " + password);
-		 return ("Success");
+		// return ("Success");
+		 
+		Datastore db = new  Datastore();
+		Techicksmember member = db.find(userName);
+		if (member==null){
+			return "Member not existant";
+		}
+		if (member.getPassword()==password){
+			return "Identity validated!";
+		}
+		
+		return "Identity Invalidated";
+		
 	}
+	
 	
 	
 	@ServiceMethod

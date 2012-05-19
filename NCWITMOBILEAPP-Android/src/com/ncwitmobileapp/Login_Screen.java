@@ -5,7 +5,6 @@ import com.ncwitmobileapp.client.MyRequestFactory.HelloWorldRequest;
 import com.ncwitmobileapp.client.MyRequestFactory.NCWITMOBILEAPPRequest;
 
 
-import com.google.gwt.core.client.GWT;
 import com.google.web.bindery.requestfactory.shared.Receiver;
 import com.google.web.bindery.requestfactory.shared.ServerFailure;
 
@@ -20,6 +19,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class Login_Screen extends Activity
@@ -51,7 +51,18 @@ public class Login_Screen extends Activity
 				
                 final String username = un.getText().toString();
                 final String password = ps.getText().toString();
-				
+                final Context context = getApplicationContext();
+                CharSequence text = "Hello toast!";
+                int duration = Toast.LENGTH_SHORT;
+
+               
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+                
+                
+                
+                login.setEnabled(false);
+                Log.i(TAG, "preparing request to send to server");
                 login.setEnabled(false);
                 Log.i(TAG, "preparing request to send to server");
 
@@ -61,8 +72,9 @@ public class Login_Screen extends Activity
 
                     @Override
                     protected String doInBackground(Void... arg0) {
-                        MyRequestFactory requestFactory = Util.getRequestFactory(mContext,
-                                MyRequestFactory.class);
+                    	
+                        MyRequestFactory requestFactory = Util.getRequestFactory(mContext, MyRequestFactory.class);
+                        
                         final NCWITMOBILEAPPRequest request = requestFactory.nCWITMOBILEAPPRequest();
                         Log.i(TAG, "Sending request to server");
                         request.getAuthenticatedTechicksmember(username, password).fire(new Receiver<String>() {
@@ -77,7 +89,13 @@ public class Login_Screen extends Activity
                                 Log.i(TAG,"got back a hello world message");
                             }
                         });
-                        return message;
+                        CharSequence tet = message;
+                        int duration = Toast.LENGTH_SHORT;
+
+                       
+                        Toast toast = Toast.makeText(context, tet, duration);
+                        toast.show();
+                        return message; 
                     }
 
                 }.execute();
