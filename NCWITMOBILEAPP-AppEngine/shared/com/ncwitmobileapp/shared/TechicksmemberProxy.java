@@ -8,15 +8,17 @@ public interface TechicksmemberProxy extends ValueProxy {
 
 	Boolean getNCWITmember();
 
-	String getName();
+	String getUserName();
 
-	String getUsername();
+	Long getId();
+
+	String getEmailAddress();
 
 	String getReferralCode();
 
 	int getBirthday();
 
-	String getPassword();
+	String getUserPassword();
 
 	String getSecurityQuestion();
 
@@ -24,18 +26,18 @@ public interface TechicksmemberProxy extends ValueProxy {
 
 	void setNCWITmember(boolean NCWITmember);
 
-	void setName(String Name);
+	void setUserName(String name);
 
-	void setPassword(String Password);
+	void setUserPassword(String password);
 
-	void setEmailAddress(String EmailAddress);
+	void setEmailAddress(String emailAddress);
 
-	void setReferralCode(String ReferralCode);
+	void setReferralCode(String referralCode);
 
-	void setBirthday(int Birthday);
+	void setBirthday(int birthday);
 
-	void setSecurityQuestion(String SecurityQuestion);
+	void setSecurityQuestion(String securityQuestion);
 
-	void setSecurityAnswer(String SecurityAnswer);
-		
+	void setSecurityAnswer(String securityAnswer);
+
 }

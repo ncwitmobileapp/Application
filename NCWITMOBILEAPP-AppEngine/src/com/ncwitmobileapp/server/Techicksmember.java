@@ -1,7 +1,6 @@
 
 package com.ncwitmobileapp.server;
 
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,17 +11,19 @@ import javax.persistence.Id;
 public class Techicksmember extends Object
 {
 	private static final String VALID = null;
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 	
+	private String userName;
 	private Boolean NCWITmember;
-	private String Name;
-	private String Password;
-	private static String EmailAddress;
-	private String ReferralCode;
-	private int Birthday;
-	private String SecurityQuestion;
-	private String SecurityAnswer;//security answer is insensitive
+	private String userPassword;
+	private String emailAddress;
+	private String referralCode;
+	private int    birthday;
+	private String securityQuestion;
+	private String securityAnswer;//security answer is insensitive
 	
 	
 	public Techicksmember()
@@ -35,41 +36,44 @@ public class Techicksmember extends Object
 		return NCWITmember;
 	}
 	
-	public String getName()
+	public String getUserName()
 	{
-		return Name;
-	}
-	public String getUsername()
-	{
-		return EmailAddress;
+		return this.userName;
 		
 	}
-	public static  String getEmailAddress()
+	
+	public Long getId()
 	{
-		return EmailAddress;
+		return id;
 	}
+	
+	public String getEmailAddress()
+	{
+		return emailAddress;
+	}
+	
 	public String getReferralCode()
 	{
-		return ReferralCode;
+		return referralCode;
 	}
 
 	public int getBirthday()
 	{
-		return Birthday;
+		return birthday;
 	}
 	
-	public String getPassword()
+	public String getUserPassword()
 	{
-		return Password;
+		return userPassword;
 	}
 	
 	public String getSecurityQuestion()
 	{
-		return SecurityQuestion;
+		return securityQuestion;
 	}
 	public String getSecurityAnswer()
 	{
-		return SecurityAnswer;
+		return securityAnswer;
 	}
 	
 
@@ -81,40 +85,45 @@ public class Techicksmember extends Object
 		
 	}
 	
-	public void setName(String Name)//passed parameters First and Last name concatenated
+	public void setUserName(String name)//passed parameters First and Last name concatenated
 	{
-		
-		this.Name=Name;
-	}
-	public void setPassword(String Password)
-	{
-		this.Password=Password;
+			this.userName=name;
 	}
 	
-	public void setEmailAddress(String EmailAddress)
+	public void setId(Long id)
 	{
-		this.EmailAddress=EmailAddress;
+		this.id = id;
 	}
-	public void setReferralCode(String ReferralCode)
+	
+	public void setUserPassword(String password)
+	{
+		this.userPassword=password;
+	}
+	
+	public void setEmailAddress(String emailAddress)
+	{
+		this.emailAddress=emailAddress;
+	}
+	public void setReferralCode(String referralCode)
 	{
 		if (getNCWITmember()==true)
 		{
-			ReferralCode = VALID;//for registration if a referral code is valid, no need check.
+			referralCode = VALID;//for registration if a referral code is valid, no need check.
 		}
-		this.ReferralCode=ReferralCode;
+		this.referralCode=referralCode;
 	}
-	public void setBirthday(int Birthday) //format birthday as an integer of format MMDDYYYY
+	public void setBirthday(int birthday) //format birthday as an integer of format MMDDYYYY
 	{
-		this.Birthday=Birthday;
+		this.birthday=birthday;
 		
 	}
-	public void setSecurityQuestion(String SecurityQuestion)
+	public void setSecurityQuestion(String securityQuestion)
 	{
-		this.SecurityQuestion=SecurityQuestion;
+		this.securityQuestion=securityQuestion;
 	}
-	public void setSecurityAnswer(String SecurityAnswer)
+	public void setSecurityAnswer(String securityAnswer)
 	{
-		this.SecurityAnswer= SecurityAnswer.toLowerCase();
+		this.securityAnswer= securityAnswer.toLowerCase();
 	}
 
 	@Override
@@ -129,8 +138,8 @@ public class Techicksmember extends Object
 		{
 			builder.append("Regular Member: ");
 		}
-		builder.append(Name);
-		builder.append(EmailAddress);
+		builder.append(userName);
+		builder.append(emailAddress);
 		return builder.toString();
 		
 		
