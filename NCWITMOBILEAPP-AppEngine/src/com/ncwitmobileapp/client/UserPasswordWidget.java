@@ -66,7 +66,7 @@ public class UserPasswordWidget extends Composite {
   public static final Comparator<? super TechicksmemberProxy> MEMBER_COMPARATOR = new Comparator<TechicksmemberProxy>() {
     public int compare(TechicksmemberProxy t0, TechicksmemberProxy t1) {
       // Sort by user name
-         return t0.getUserName().compareTo(t1.getUserName());
+         return t0.getUserName().compareToIgnoreCase(t1.getUserName());
     };
 
   };

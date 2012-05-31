@@ -25,15 +25,18 @@ public class NCWITMOBILEAPPService {
 	@ServiceMethod
 	public static String getAuthenticatedTechicksmember(String userName, String password) {
 		 log.info("Called authenticateTechicksmember");
-		 log.info("userName = " + userName + " password = " + password);
+		 log.info("userName = " + userName + " PassWord = " + password);
 		// return ("Success");
 		 
-		Datastore db = new  Datastore();
+		DataStore db = new DataStore();
 		Techicksmember member = db.find(userName);
+		log.info("Returning from Database");
 		if (member==null){
+			log.info("No MAtch On Login");
 			return "Member not existant";
 		}
-		if (member.getPassword()==password){
+		if (member.getUserPassword().equals(password)){
+			log.info("Valid user id entered");
 			return "Identity validated!";
 		}
 		
