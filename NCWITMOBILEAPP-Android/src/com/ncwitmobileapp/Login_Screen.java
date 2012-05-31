@@ -117,8 +117,6 @@ public class Login_Screen extends Activity
 	    }
 	    m_currentToast = Toast.makeText(this, text, Toast.LENGTH_SHORT);
 	    m_currentToast.show();
-	    
-
 	}
 }
 
