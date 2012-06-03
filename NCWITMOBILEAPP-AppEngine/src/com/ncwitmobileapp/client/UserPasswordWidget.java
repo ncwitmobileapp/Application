@@ -48,6 +48,7 @@ import com.google.gwt.view.client.ListDataProvider;
 import com.google.gwt.view.client.Range;
 import com.google.web.bindery.requestfactory.shared.Receiver;
 
+import com.ncwitmobileapp.server.DeviceInfo;
 import com.ncwitmobileapp.shared.TechicksmemberRequestFactory;
 import com.ncwitmobileapp.shared.TechicksmemberProxy;
 import com.ncwitmobileapp.shared.TechicksmemberRequest;
@@ -56,6 +57,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+
+import org.mortbay.log.Log;
+
+
 
 public class UserPasswordWidget extends Composite {
 
@@ -66,7 +71,7 @@ public class UserPasswordWidget extends Composite {
   public static final Comparator<? super TechicksmemberProxy> MEMBER_COMPARATOR = new Comparator<TechicksmemberProxy>() {
     public int compare(TechicksmemberProxy t0, TechicksmemberProxy t1) {
       // Sort by user name
-         return t0.getUserName().compareTo(t1.getUserName());
+         return t0.getUserName().compareToIgnoreCase(t1.getUserName());
     };
 
   };
@@ -193,7 +198,7 @@ public class UserPasswordWidget extends Composite {
     }
   }
 
-  private static final int DELAY_MS = 1000;
+  private static final int DELAY_MS = 5000;
 
   private static UserPasswordBinder uiBinder = GWT.create(UserPasswordBinder.class);
 
@@ -211,8 +216,10 @@ public class UserPasswordWidget extends Composite {
   private final TechicksmemberRequestFactory requestFactory = GWT
       .create(TechicksmemberRequestFactory.class);
   private List<TechicksmemberProxy> usernamePasswordList;
+  private ArrayList<TechicksmemberProxy> sortedMembers = new ArrayList <TechicksmemberProxy>();
 
   public UserPasswordWidget() {
+	
     initWidget(uiBinder.createAndBindUi(this));
 
     requestFactory.initialize(eventBus);
@@ -278,12 +285,14 @@ public class UserPasswordWidget extends Composite {
     requestFactory.techicksmemberRequest().queryTechicksmembers().fire(new Receiver<List<TechicksmemberProxy>>() {
       @Override
       public void onSuccess(List<TechicksmemberProxy> members) {
-        if (members.size() > 0) {
+    	  
+    	if (members.size() > 0) {
           userpasswordsignin.setText("Logged in as " + members.get(0).getEmailAddress());
         }
 
         // sort first
-        ArrayList<TechicksmemberProxy> sortedMembers = new ArrayList<TechicksmemberProxy>(members);
+    	sortedMembers.clear();
+    	sortedMembers.addAll(members);
         Collections.sort(sortedMembers, MEMBER_COMPARATOR);
 
         usernamePasswordList.clear();

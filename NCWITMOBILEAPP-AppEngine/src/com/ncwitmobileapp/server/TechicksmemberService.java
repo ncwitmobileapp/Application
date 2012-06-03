@@ -40,6 +40,7 @@ public class TechicksmemberService {
 
 	@ServiceMethod
 	public static  List<Techicksmember> queryTechicksmembers() {
+		log.info("Calling findAll");
 		return db.findAll();
 	}
 
