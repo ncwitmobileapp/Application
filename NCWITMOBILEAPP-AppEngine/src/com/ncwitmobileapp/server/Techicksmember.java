@@ -1,3 +1,4 @@
+
 package com.ncwitmobileapp.server;
 
 import javax.persistence.Entity;

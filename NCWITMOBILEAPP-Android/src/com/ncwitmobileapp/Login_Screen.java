@@ -5,13 +5,13 @@ import com.ncwitmobileapp.client.MyRequestFactory.HelloWorldRequest;
 import com.ncwitmobileapp.client.MyRequestFactory.NCWITMOBILEAPPRequest;
 
 
-import com.google.gwt.core.client.GWT;
 import com.google.web.bindery.requestfactory.shared.Receiver;
 import com.google.web.bindery.requestfactory.shared.ServerFailure;
 
 import android.R.color;
 import android.app.Activity;
 import android.content.Context;
+import android.os.Looper;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.Editable;
@@ -20,12 +20,13 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class Login_Screen extends Activity
 {
     private static final String TAG = "Techchicks";
-
+    Toast m_currentToast = null;
     /**
      * The current context.
      */
@@ -34,7 +35,8 @@ public class Login_Screen extends Activity
     @Override
 	public void onCreate(Bundle savedInstanceState)
 	{
-        requestWindowFeature(Window.FEATURE_NO_TITLE); 
+    	
+    	requestWindowFeature(Window.FEATURE_NO_TITLE); 
         super.onCreate(savedInstanceState);		 
         setContentView(R.layout.logins);
 			
@@ -51,7 +53,11 @@ public class Login_Screen extends Activity
 				
                 final String username = un.getText().toString();
                 final String password = ps.getText().toString();
-				
+                final Context context = getApplicationContext();
+                showToast("Hello toast!");
+               
+                login.setEnabled(false);
+                Log.i(TAG, "preparing request to send to server");
                 login.setEnabled(false);
                 Log.i(TAG, "preparing request to send to server");
 
@@ -61,8 +67,8 @@ public class Login_Screen extends Activity
 
                     @Override
                     protected String doInBackground(Void... arg0) {
-                        MyRequestFactory requestFactory = Util.getRequestFactory(mContext,
-                                MyRequestFactory.class);
+                    	
+                        MyRequestFactory requestFactory = Util.getRequestFactory(mContext, MyRequestFactory.class);
                         final NCWITMOBILEAPPRequest request = requestFactory.nCWITMOBILEAPPRequest();
                         Log.i(TAG, "Sending request to server");
                         request.getAuthenticatedTechicksmember(username, password).fire(new Receiver<String>() {
@@ -77,7 +83,11 @@ public class Login_Screen extends Activity
                                 Log.i(TAG,"got back a hello world message");
                             }
                         });
-                        return message;
+                        Looper.prepare();
+                        showToast(message);
+                        Looper.loop();
+                        
+                        return message; 
                     }
 
                 }.execute();
@@ -99,5 +109,14 @@ public class Login_Screen extends Activity
             }
         });
     }
+    void showToast(String text)
+	{
+	    if(m_currentToast != null)
+	    {
+	        m_currentToast.cancel();
+	    }
+	    m_currentToast = Toast.makeText(this, text, Toast.LENGTH_SHORT);
+	    m_currentToast.show();
+	}
 }
 
