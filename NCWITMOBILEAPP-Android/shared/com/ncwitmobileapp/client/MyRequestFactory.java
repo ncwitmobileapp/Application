@@ -33,11 +33,12 @@ public interface MyRequestFactory extends RequestFactory {
 		 */
 		Request<String> getMessage();
 	}
-	
+
 	@ServiceName("com.ncwitmobileapp.server.NCWITMOBILEAPPService")
-	public interface NCWITMOBILEAPPRequest	extends RequestContext {
-		
-		Request<String> getAuthenticatedTechicksmember(String userName, String password);
+	public interface NCWITMOBILEAPPRequest extends RequestContext {
+
+		Request<String> getAuthenticatedTechicksmember(String userName,
+				String password);
 	}
 
 	@ServiceName("com.ncwitmobileapp.server.RegistrationInfo")

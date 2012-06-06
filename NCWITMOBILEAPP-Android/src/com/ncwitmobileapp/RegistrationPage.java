@@ -18,20 +18,22 @@ import android.widget.TextView;
 
 
 public class RegistrationPage extends Activity {
-
+	
 	private Button mPickDate;
-	private int mYear;
-	private int mMonth;
-	private int mDay;
+	private int mYear=2012;
+	private int mMonth=1;
+	private int mDay=1;
 	
 	static final int DATE_DIALOG_ID = 0;
 	static final long THIRTEEN_YEARS_IN_MILLIS = 410260032000L;
-    
+	
     private DatePickerDialog.OnDateSetListener mDateSetListener =
-            new DatePickerDialog.OnDateSetListener() {
+            new DatePickerDialog.OnDateSetListener() 
+    		{
 
                 public void onDateSet(DatePicker view, int year, 
-                                      int monthOfYear, int dayOfMonth) {
+                                      int monthOfYear, int dayOfMonth) 
+                {
                     mYear = year;
                     mMonth = monthOfYear;
                     mDay = dayOfMonth;
@@ -39,7 +41,8 @@ public class RegistrationPage extends Activity {
                 }
             };
 	
-	protected void onCreate(Bundle savedInstanceState) {
+	protected void onCreate(Bundle savedInstanceState) 
+	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.registration);
 		
@@ -52,7 +55,6 @@ public class RegistrationPage extends Activity {
 			}
 		});
 		
-		LinearLayout tosPage = (LinearLayout)findViewById(R.id.tosLayout);
 		MatchFilter myMatchFilter = new MatchFilter() {
 			public boolean acceptMatch(CharSequence cs, int start, int end) {
 				return start > 26;
@@ -62,7 +64,6 @@ public class RegistrationPage extends Activity {
 		TextView tOS = (TextView)findViewById(R.id.Terms);
 		Pattern pattern2 = Pattern.compile("[a-zA-Z]+");
 		Linkify.addLinks(tOS,pattern2, "", myMatchFilter, null);
-		tosPage.addView(tOS);
 
 		
 	}//End onCreate
@@ -75,17 +76,13 @@ public class RegistrationPage extends Activity {
                     .append(mDay).append("-")
                     .append(mYear).append(" "));
     }//End updateDisplay
-            
+    
     protected Dialog onCreateDialog(int id) {
     	switch (id) {
     	case DATE_DIALOG_ID:
     		DatePickerDialog d = new DatePickerDialog(this,
     				mDateSetListener,
     				mYear, mMonth, mDay);
-    		DatePicker dp = d.getDatePicker();
-    		Calendar c = Calendar.getInstance();
-    		long today = c.getTimeInMillis();
-    		dp.setMaxDate(today - THIRTEEN_YEARS_IN_MILLIS);
     		return d;
     	}
     	return null;
