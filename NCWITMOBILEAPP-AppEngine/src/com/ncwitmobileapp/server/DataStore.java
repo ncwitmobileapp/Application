@@ -1,7 +1,9 @@
 package com.ncwitmobileapp.server;
 
 import com.google.android.c2dm.server.PMF;
-import com.google.appengine.api.users.*;
+import com.google.appengine.api.users.User;
+import com.google.appengine.api.users.UserService;
+import com.google.appengine.api.users.UserServiceFactory;
 import com.google.web.bindery.requestfactory.server.RequestFactoryServlet;
 
 import java.util.Calendar;
@@ -27,18 +29,21 @@ public class DataStore {
 	}
 
 	@SuppressWarnings("unchecked")
-	public Techicksmember find(String Username) {
-		if (Username == null) {
+	public Techicksmember find(String userName) {
+		if (userName == null) {
 			return null;
 		}
 
 		PersistenceManager pm = PMF.get().getPersistenceManager();
 		try {
-			Query query = pm.newQuery("select from "
-					+ Techicksmember.class.getName() + " where Username=="
-					+ Username.toString());
-			List<Techicksmember> list = (List<Techicksmember>) query.execute();
-			return (Techicksmember) (list.size() == 0 ? null : list.get(0));
+
+			Query q = pm.newQuery(Techicksmember.class);
+			q.setFilter("userName == userNameParam");
+			q.declareParameters("String userNameParam");
+			List<Techicksmember> results = (List<Techicksmember>) q
+					.execute(userName);
+			return (Techicksmember) (results.isEmpty() ? null : results.get(0));
+
 		} catch (RuntimeException e) {
 			System.out.println(e);
 			throw e;
