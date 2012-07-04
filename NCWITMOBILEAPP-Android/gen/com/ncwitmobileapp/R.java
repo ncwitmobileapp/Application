@@ -23,8 +23,9 @@ public final class R {
         public static final int ic_mailboxes_accounts=0x7f020006;
         public static final int login=0x7f020007;
         public static final int logo=0x7f020008;
-        public static final int status_icon=0x7f020009;
-        public static final int text=0x7f02000a;
+        public static final int orangegradient=0x7f020009;
+        public static final int status_icon=0x7f02000a;
+        public static final int text=0x7f02000b;
     }
     public static final class id {
         public static final int AcceptTOS=0x7f070029;
@@ -39,38 +40,38 @@ public final class R {
         public static final int ReferralCode=0x7f070022;
         public static final int ReferralLayout=0x7f070020;
         public static final int RegisterButton=0x7f07002b;
+        public static final int SecurityQuestion=0x7f070026;
         public static final int SelectBirthday=0x7f070025;
-        public static final int SelectSecurityQuestion=0x7f070026;
         public static final int Terms=0x7f07002a;
         public static final int Winner=0x7f07001f;
         public static final int backtologin=0x7f07000c;
         public static final int connect=0x7f070006;
         public static final int connect_footer=0x7f070005;
         public static final int connect_text=0x7f070001;
-        public static final int copyright=0x7f070016;
+        public static final int copyright=0x7f070018;
         public static final int disconnect=0x7f070009;
         public static final int disconnect_footer=0x7f070008;
         public static final int disconnect_text=0x7f070007;
         public static final int divider=0x7f070003;
         public static final int emailAddress=0x7f07001d;
-        public static final int forgotpassword=0x7f070013;
+        public static final int forgotpassword=0x7f070015;
         public static final int header=0x7f070000;
         public static final int hello_world=0x7f07000f;
         public static final int hello_world_info=0x7f07000d;
-        public static final int imageButton1=0x7f070017;
         public static final int imageView1=0x7f07000a;
         public static final int linearLayout1=0x7f07001a;
-        public static final int login=0x7f070015;
-        public static final int password=0x7f070012;
-        public static final int register=0x7f070014;
+        public static final int login=0x7f070017;
+        public static final int password=0x7f070014;
+        public static final int register=0x7f070016;
         public static final int say_hello=0x7f07000e;
         public static final int scrollView1=0x7f070019;
         public static final int select_account=0x7f070004;
         public static final int select_text=0x7f070002;
-        public static final int textView1=0x7f070018;
-        public static final int title=0x7f070010;
+        public static final int textView1=0x7f070010;
+        public static final int timeLeft=0x7f070011;
+        public static final int title=0x7f070012;
         public static final int tosLayout=0x7f070028;
-        public static final int username=0x7f070011;
+        public static final int username=0x7f070013;
     }
     public static final class layout {
         public static final int account=0x7f030000;
@@ -78,8 +79,9 @@ public final class R {
         public static final int disconnect=0x7f030002;
         public static final int failedlogin=0x7f030003;
         public static final int hello_world=0x7f030004;
-        public static final int logins=0x7f030005;
-        public static final int registration=0x7f030006;
+        public static final int lockoutpage=0x7f030005;
+        public static final int logins=0x7f030006;
+        public static final int registration=0x7f030007;
     }
     public static final class menu {
         public static final int main_menu=0x7f060000;
@@ -92,6 +94,7 @@ public final class R {
         public static final int FirstName=0x7f040021;
         public static final int ForgotPassword=0x7f040024;
         public static final int LastName=0x7f040022;
+        public static final int LockoutValues=0x7f04002c;
         public static final int Login=0x7f040027;
         public static final int Logo=0x7f040023;
         public static final int NCWITWinner=0x7f04001a;
@@ -103,6 +106,7 @@ public final class R {
         public static final int RegisterButton=0x7f040020;
         public static final int Registration=0x7f040016;
         public static final int SecurityAnswer=0x7f04001e;
+        public static final int SecurityQuestion=0x7f04002d;
         public static final int SelectBDay=0x7f04001d;
         public static final int TOS=0x7f04001f;
         /**  Menu item text [CHAR LIMIT=NONE] 

@@ -24,13 +24,10 @@ public class Techicksmember extends Object
 	private int    birthday;
 	private String securityQuestion;
 	private String securityAnswer;//security answer is insensitive
+	private String firstName;
+	private String lastName;
 	
-	
-	public Techicksmember()
-	{
-	
-	}
-	
+
 	public Boolean getNCWITmember()
 	{
 		return NCWITmember;
@@ -75,6 +72,20 @@ public class Techicksmember extends Object
 	{
 		return securityAnswer;
 	}
+	public String getfirstName()
+	{
+		return firstName;
+	}
+	
+	public String getlastName()
+	{
+		return lastName;
+	}
+	public Techicksmember()
+	{
+	
+	}
+	
 	
 
 	//The following methods are for Registration  
@@ -104,6 +115,15 @@ public class Techicksmember extends Object
 	{
 		this.emailAddress=emailAddress;
 	}
+	public void setfirstName(String firstName)
+	{
+		this.firstName=firstName;
+	}
+	public void setlastName(String lastName)
+	{
+		this.lastName=lastName;
+	}
+	
 	public void setReferralCode(String referralCode)
 	{
 		if (getNCWITmember()==true)
