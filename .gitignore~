@@ -1,0 +1,6 @@
+# Ignored Files
+*.class
+*.jar
+*gwt-unitCache*
+.gwt-log
+
