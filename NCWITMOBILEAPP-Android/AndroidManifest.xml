@@ -37,13 +37,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        <activity android:name=".RegistrationPage" android:label="@string/app_name"/>
 
         <!-- Account selection activity -->
         <activity android:name=".AccountsActivity" android:label="@string/app_name"
             android:screenOrientation="portrait">
         </activity>
+        
+        <activity android:name=".LockOutScreen"></activity>
+        <activity android:name=".RegistrationPage"></activity>
+       
 
         <!-- In order to use the C2DM library, an application must declare a class 
              with the name C2DMReceiver, extending com.google.android.c2dm.C2DMBaseReceiver.
