@@ -9,9 +9,10 @@
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:adjustViewBounds="true"
         android:maxHeight="60dp"
-        android:src="@drawable/banner1trans" android:layout_gravity="center_horizontal"/>
+        android:src="@drawable/banner1trans" />
 
     <TextView
         android:id="@+id/textView1"
@@ -44,7 +45,8 @@
                 android:background="@drawable/greengradient"
                 android:ems="10"
                 android:hint="@string/FirstName"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textColorHint="#565051" />
 
             <EditText
                 android:id="@+id/LastName"
@@ -55,7 +57,8 @@
                 android:background="@drawable/greengradient"
                 android:ems="10"
                 android:hint="@string/LastName"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textColorHint="#565051" />
 
             <EditText
                 android:id="@+id/emailAddress"
@@ -65,7 +68,8 @@
                 android:layout_weight="0.97"
                 android:background="@drawable/greengradient"
                 android:hint="@string/EmailAddress"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:textColorHint="#565051" />
 
             <EditText
                 android:id="@+id/password"
@@ -75,7 +79,8 @@
                 android:layout_weight="0.97"
                 android:background="@drawable/greengradient"
                 android:hint="@string/Password"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:textColorHint="#565051" />
 
             <EditText
                 android:id="@+id/PasswordConfirm"
@@ -85,7 +90,8 @@
                 android:layout_weight="0.97"
                 android:background="@drawable/greengradient"
                 android:hint="@string/PasswordConfirm"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:textColorHint="#565051" />
 
             <TextView
                 android:id="@+id/Winner"
@@ -96,7 +102,7 @@
                 android:gravity="center"
                 android:text="@string/NCWITWinner"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="#FF8F00"
+                android:textColor="#FFFFFF"
                 android:textSize="15dp" />
 
             <LinearLayout
@@ -111,7 +117,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:text="@string/ReferralCode"
-                    android:textColor="#FF8F00" />
+                    android:textColor="#FFFFFF" />
 
                 <EditText
                     android:id="@+id/ReferralCode"
@@ -121,7 +127,8 @@
                     android:layout_weight="1"
                     android:background="@drawable/greengradient"
                     android:gravity="center"
-                    android:hint="@string/ReferralCode" />
+                    android:hint="@string/ReferralCode"
+                    android:textColorHint="#565051" />
             </LinearLayout>
 
             <LinearLayout
@@ -138,7 +145,7 @@
                     android:layout_margin="5dp"
                     android:text="@string/Birthday"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textColor="#FF8F00" />
+                    android:textColor="#FFFFFF" />
 
                 <Button
                     android:id="@+id/SelectBirthday"
@@ -147,6 +154,7 @@
                     android:layout_margin="5dp"
                     android:background="@drawable/greengradient"
                     android:hint="@string/SelectBDay"
+                    android:textColorHint="#565051"
                     android:textSize="18dp" />
             </LinearLayout>
 
@@ -158,7 +166,8 @@
                 android:layout_weight="0.97"
                 android:background="@drawable/greengradient"
                 android:ems="10"
-                android:hint="@string/SecurityQuestion" />
+                android:hint="@string/SecurityQuestion"
+                android:textColorHint="#565051" />
 
             <EditText
                 android:id="@+id/EnterSecurityAnswer"
@@ -167,7 +176,8 @@
                 android:layout_margin="5dp"
                 android:layout_weight="0.97"
                 android:background="@drawable/greengradient"
-                android:hint="@string/SecurityAnswer" />
+                android:hint="@string/SecurityAnswer"
+                android:textColorHint="#565051" />
 
             <LinearLayout
                 android:id="@+id/tosLayout"
@@ -179,7 +189,7 @@
                     android:id="@+id/AcceptTOS"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#FF8F00" />
+                    android:textColor="#FFFFFF" />
 
                 <TextView
                     android:id="@+id/Terms"
@@ -187,7 +197,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/TOS"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textColor="#FF8F00" />
+                    android:textColor="#FFFFFF" />
             </LinearLayout>
 
             <Button
@@ -197,7 +207,9 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="5dp"
                 android:background="@drawable/orangegradient"
-                android:hint="@string/RegisterButton" />
+                android:hint="@string/RegisterButton"
+                android:textColorHint="#FFFFFF"
+                android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>
 
