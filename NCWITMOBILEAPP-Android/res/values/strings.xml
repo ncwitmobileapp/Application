@@ -93,6 +93,8 @@
     <string name="failedMessage">Oops! That does not match our records! </string>
     <string name="backtologin">Go Back</string>
     <string name="Pleasetryagain">Please try again</string>
+    <string name="LockoutValues">Sorry, you have reached the maximum number of failed login attempts, your account is now locked for security purposes. Please try again in </string>
+    <string name="SecurityQuestion">Enter a security question</string>
 
     <!-- Strings for State Spinner -->
     <string name = "state_prompt">Your state:</string>
