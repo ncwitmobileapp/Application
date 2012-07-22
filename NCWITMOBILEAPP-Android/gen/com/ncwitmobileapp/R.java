@@ -24,11 +24,12 @@ public final class R {
         public static final int greengradient=0x7f020006;
         public static final int ic_launcher=0x7f020007;
         public static final int ic_mailboxes_accounts=0x7f020008;
+        public static final int orangegradient=0x7f020009;
+        public static final int status_icon=0x7f02000a;
+        public static final int text=0x7f02000b;
         public static final int login=0x7f020009;
         public static final int logo=0x7f02000a;
         public static final int referralcodetitle=0x7f02000b;
-        public static final int status_icon=0x7f02000c;
-        public static final int text=0x7f02000d;
         public static final int whiteline=0x7f02000e;
     }
     public static final class id {
@@ -44,8 +45,8 @@ public final class R {
         public static final int ReferralCode=0x7f080050;
         public static final int ReferralLayout=0x7f08004e;
         public static final int RegisterButton=0x7f080059;
+        public static final int SecurityQuestion=0x7f070026;
         public static final int SelectBirthday=0x7f080053;
-        public static final int SelectSecurityQuestion=0x7f080054;
         public static final int Terms=0x7f080058;
         public static final int Winner=0x7f08004d;
         public static final int backtologin=0x7f08000c;
@@ -129,7 +130,8 @@ public final class R {
         public static final int disconnect=0x7f030002;
         public static final int failedlogin=0x7f030003;
         public static final int hello_world=0x7f030004;
-        public static final int logins=0x7f030005;
+        public static final int lockoutpage=0x7f030005;
+        public static final int logins=0x7f030006;
         public static final int profile=0x7f030006;
         public static final int registration=0x7f030007;
     }
@@ -144,6 +146,7 @@ public final class R {
         public static final int FirstName=0x7f050022;
         public static final int ForgotPassword=0x7f050025;
         public static final int LastName=0x7f050023;
+        public static final int LockoutValues=0x7f04002c;
         public static final int Login=0x7f050028;
         public static final int Logo=0x7f050024;
         public static final int NCWITWinner=0x7f05001b;
@@ -156,6 +159,7 @@ public final class R {
         public static final int Registration=0x7f050017;
         public static final int SecurityAnswer=0x7f05001f;
         public static final int SelectBDay=0x7f05001e;
+        public static final int SecurityQuestion=0x7f04002d;
         public static final int TOS=0x7f050020;
         /**  Menu item text [CHAR LIMIT=NONE] 
          */
