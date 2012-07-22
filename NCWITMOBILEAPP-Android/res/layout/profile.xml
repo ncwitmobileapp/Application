@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#008fc0"
+        android:orientation="vertical" >
+
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/techicks"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/slogan"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHint="#000000" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <TextView
+            android:id="@+id/birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Birthday-"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Month:"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/mo"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:ems="10"
+                android:hint="XX"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Day:"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/da"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:ems="10"
+                android:hint="XX"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Year:"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/ye"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:ems="10"
+                android:hint="XXXX"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="18dp" />
+        </TableRow>
+
+        <RadioButton
+            android:id="@+id/show1"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="Show Birthday"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/show2"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="Show only Month and Day"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/show3"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginBottom="15sp"
+            android:text="Don&apos;t show Birthday"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/show4"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="Student"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/show5"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="Educator"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/show6"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginBottom="5dp"
+            android:text="Professional"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/show7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="Location"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Location?" />
+
+        <EditText
+            android:id="@+id/show8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffffff"
+            android:hint="Interests"
+            android:inputType="textPersonName"
+            android:lineSpacingExtra="5dp"
+            android:minHeight="100sp"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <TextView
+            android:id="@+id/show9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text="Workplaces"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/show10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffffff"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffffff"
+            android:hint="Description(Location, Job Discription, etc.)"
+            android:inputType="textPersonName"
+            android:minHeight="100dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/show11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Time There:"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/years"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5sp"
+                android:background="#ffffff"
+                android:ems="10"
+                android:hint="Years"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/months"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:ems="10"
+                android:hint="Months"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="14dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Currently Working Here?"
+                android:textSize="14dp" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/newWP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text="Add a new Workplace"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/newSchoools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text="Schools"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/schoolName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffffff"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/description2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffffff"
+            android:hint="Description(Location, Major, Activities, etc.)"
+            android:inputType="textPersonName"
+            android:minHeight="100dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Time There:"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/years2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="#ffffff"
+                android:ems="10"
+                android:hint="Years"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/months2"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:ems="10"
+                android:hint="Months"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="14dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Currently Attending?"
+                android:textSize="14dp" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/newSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5sp"
+            android:text="Add a new School"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <!-- MICHELLE'S CODE STARTS HERE -->
+
+        <TextView
+            style="@style/heading"
+            android:paddingBottom="5dp"
+            android:text="Awards" />
+
+        <TextView
+            style="@style/subheading"
+            android:text="NCWIT National Award" />
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Winner" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRunnerUpNational"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Runner-Up" />
+
+        <EditText
+            android:id="@+id/editTextYearNational"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="Year"
+            android:inputType="number" >
+        </EditText>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:text="Add Year"
+            android:textColor="#FFFFFF" />
+        <!-- Add underlining -->
+
+        <TextView
+            style="@style/subheading"
+            android:text="NCWIT Regional Affiliate Award" />
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Winner" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRunnerUpRegional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Runner-Up" />
+
+        <!-- NEW HORIZONTAL LAYOUT FOR YEAR SECTION -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editTextYearRegional"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="Year"
+                android:inputType="number" >
+            </EditText>
+            <!-- need to fix drop down menu; check java file; string = state_prompt -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="@string/state_prompt" />
+
+            <Spinner
+                android:id="@+id/stateSpinner"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:prompt="@string/state_prompt"
+                android:entries="@array/states_array" />
+        </LinearLayout>
+        <!-- END OF EXTRA LINEAR LAYOUT -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:text="Add Year"
+            android:textColor="#FFFFFF" />
+        <!-- Add underlining -->
+
+        <TextView
+            style="@style/heading"
+            android:paddingBottom="5dp"
+            android:text="Refer a friend!" />
+
+        <TextView
+            style="@style/subheading"
+            android:text="Generate a Referral code here:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Referral codes are only active for 14 days. Your friend must download this app and enter the referral code at the time of registration in order to activate their account. Clicking below signifies that you undersatnd:"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/buttonGenerate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Generate!" />
+
+        <!-- Start of Code Box -->
+
+        <LinearLayout
+            android:id="@+id/linearLayoutReferralCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/graybackground"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:src="@drawable/referralcodetitle" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/whiteline" />
+
+            <!-- Draw in referral code when you find out how -->
+
+            <LinearLayout
+                android:id="@+id/linearLayoutShareCancelReferral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Share" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="116dp"
+                    android:gravity="right"
+                    android:text="Cancel" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSaveCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="left"
+                android:text="Cancel"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginRight="20dp"
+                android:text="Save"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
