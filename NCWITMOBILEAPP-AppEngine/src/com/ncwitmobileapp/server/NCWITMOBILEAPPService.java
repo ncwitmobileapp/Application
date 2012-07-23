@@ -44,6 +44,27 @@ public class NCWITMOBILEAPPService {
 		
 	}
 	
+	public static String createNewMember(String firstName, String lastName, String email,
+									String password, String referralCode, int birthday, 
+									String securityQuestion, String securityAnswer)
+	{
+		Techicksmember member = new Techicksmember();
+		member.setUserName(email);
+		member.setUserPassword(password);
+		member.setBirthday(birthday);
+		member.setSecurityAnswer(securityAnswer);
+		member.setSecurityQuestion(securityQuestion);
+		member.setfirstName(firstName);
+		member.setlastName(lastName);
+		member.setReferralCode(referralCode);
+		DataStore db= new DataStore();
+		db.updateTechicksmember(member);
+		
+		
+		 
+		return "Member Created!";
+	}
+	
 	
 	
 	@ServiceMethod
