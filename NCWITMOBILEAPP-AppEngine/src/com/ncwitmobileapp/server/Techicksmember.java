@@ -1,6 +1,8 @@
 
 package com.ncwitmobileapp.server;
 
+import java.sql.Time;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -26,6 +28,7 @@ public class Techicksmember extends Object
 	private String securityAnswer;//security answer is insensitive
 	private String firstName;
 	private String lastName;
+	private Time timestamp;
 	
 
 	public Boolean getNCWITmember()
@@ -80,6 +83,10 @@ public class Techicksmember extends Object
 	public String getlastName()
 	{
 		return lastName;
+	}
+	public Time getTimestamp()
+	{
+		return timestamp;
 	}
 	public Techicksmember()
 	{
@@ -144,6 +151,10 @@ public class Techicksmember extends Object
 	public void setSecurityAnswer(String securityAnswer)
 	{
 		this.securityAnswer= securityAnswer.toLowerCase();
+	}
+	public void setTimestamp(Time timestamp)
+	{
+		this.timestamp=timestamp;
 	}
 
 	@Override

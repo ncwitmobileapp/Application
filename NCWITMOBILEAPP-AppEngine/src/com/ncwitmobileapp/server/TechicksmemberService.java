@@ -16,31 +16,65 @@ public class TechicksmemberService {
 	        Logger.getLogger(DeviceInfo.class.getName());
 	
 	@ServiceMethod
-	public static Techicksmember createTechicksmember(Techicksmember member) {
-		log.info("CreateTechicksmember called");
-		return db.updateTechicksmember(member);
+	public String createTechicksmember(Techicksmember member)
+	{
+
+		DataStore db= new DataStore();
+		if (db.find(member.getUserName())==null)
+		{
+			db.updateTechicksmember(member);
+			return "Member Created!";
+		}
+		return "Member Already Existed!";
+		
 	}
 
 	@ServiceMethod
-	public static Techicksmember readTechicksmember(Long id) {
-		return null;
+	public static String getAuthenticatedTechicksmember(String userName, String password) {
+		 log.info("Called authenticateTechicksmember");
+		 log.info("userName = " + userName + " PassWord = " + password);
+		// return ("Success");
+		 
+		DataStore db = new DataStore();
+		Techicksmember member = db.find(userName);
+		log.info("Returning from Database");
+		if (member==null){
+			log.info("No MAtch On Login");
+			return "Member not existant";
+		}
+		if (member.getUserPassword().equals(password)){
+			log.info("Valid user id entered");
+			return "Identity validated!";
+		}
+		
+		return "Identity Invalidated";
+		
+	}
+	
+	
+	@ServiceMethod
+	public Techicksmember readTechicksmember(String username) {
+		DataStore db=new DataStore();
+		return db.find(username);
 	}
 
 	@ServiceMethod
-	public static Techicksmember updateTechicksmember(Techicksmember techicksmember) {
-		return null;
+	public Techicksmember updateTechicksmember(Techicksmember techicksmember) {
+		DataStore db=new DataStore();
+		db.updateTechicksmember(techicksmember);
+		return db.find(techicksmember.getUserName());
 	}
 
 	@ServiceMethod
-	public static void deleteTechicksmember(Techicksmember member) {
-		db.delete(member.getId());
-		return ;
+	public void deleteTechicksmember(Techicksmember techicksmember) {
+		DataStore db=new DataStore();
+		db.delete(techicksmember.getId());
 
 	}
 
 	@ServiceMethod
-	public static  List<Techicksmember> queryTechicksmembers() {
+	public List<Techicksmember> queryTechicksmembers() {
+		DataStore db=new DataStore();
 		return db.findAll();
 	}
-
 }
