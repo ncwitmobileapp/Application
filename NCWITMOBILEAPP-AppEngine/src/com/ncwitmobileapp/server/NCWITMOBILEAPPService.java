@@ -17,9 +17,17 @@ public class NCWITMOBILEAPPService {
 	  }
 
 	@ServiceMethod
-	public Techicksmember createTechicksmember() {
-		// TODO Auto-generated method stub
-		return null;
+	public String createTechicksmember(Techicksmember member)
+	{
+
+		DataStore db= new DataStore();
+		if (db.find(member.getUserName())==null)
+		{
+			db.updateTechicksmember(member);
+			return "Member Created!";
+		}
+		return "Member Already Existed!";
+		
 	}
 
 	@ServiceMethod
@@ -44,51 +52,31 @@ public class NCWITMOBILEAPPService {
 		
 	}
 	
-	public static String createNewMember(String firstName, String lastName, String email,
-									String password, String referralCode, int birthday, 
-									String securityQuestion, String securityAnswer)
-	{
-		Techicksmember member = new Techicksmember();
-		member.setUserName(email);
-		member.setUserPassword(password);
-		member.setBirthday(birthday);
-		member.setSecurityAnswer(securityAnswer);
-		member.setSecurityQuestion(securityQuestion);
-		member.setfirstName(firstName);
-		member.setlastName(lastName);
-		member.setReferralCode(referralCode);
-		DataStore db= new DataStore();
-		db.updateTechicksmember(member);
-		
-		
-		 
-		return "Member Created!";
-	}
-	
-	
 	
 	@ServiceMethod
-	public Techicksmember readTechicksmember(Long id) {
-		// TODO Auto-generated method stub
-		return null;
+	public Techicksmember readTechicksmember(String username) {
+		DataStore db=new DataStore();
+		return db.find(username);
 	}
 
 	@ServiceMethod
 	public Techicksmember updateTechicksmember(Techicksmember techicksmember) {
-		// TODO Auto-generated method stub
-		return null;
+		DataStore db=new DataStore();
+		db.updateTechicksmember(techicksmember);
+		return db.find(techicksmember.getUserName());
 	}
 
 	@ServiceMethod
 	public void deleteTechicksmember(Techicksmember techicksmember) {
-		// TODO Auto-generated method stub
+		DataStore db=new DataStore();
+		db.delete(techicksmember.getId());
 
 	}
 
 	@ServiceMethod
 	public List<Techicksmember> queryTechicksmembers() {
-		// TODO Auto-generated method stub
-		return null;
+		DataStore db=new DataStore();
+		return db.findAll();
 	}
 
 }

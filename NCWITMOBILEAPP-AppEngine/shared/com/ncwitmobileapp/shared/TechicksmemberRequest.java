@@ -11,13 +11,14 @@ public interface TechicksmemberRequest extends RequestContext {
 
 	Request<TechicksmemberProxy> createTechicksmember(TechicksmemberProxy member);
 
-	Request<TechicksmemberProxy> readTechicksmember(Long id);
+	Request<TechicksmemberProxy> readTechicksmember(String username);
 
-	Request<TechicksmemberProxy> updateTechicksmember(
-			TechicksmemberProxy techicksmember);
+	Request<TechicksmemberProxy> updateTechicksmember(TechicksmemberProxy techicksmember);
 
 	Request<Void> deleteTechicksmember(TechicksmemberProxy techicksmember);
 
 	Request<List<TechicksmemberProxy>> queryTechicksmembers();
+	
+	Request<TechicksmemberProxy> getAuthenticatedTechicksmember(String userName, String password);
 
 }
