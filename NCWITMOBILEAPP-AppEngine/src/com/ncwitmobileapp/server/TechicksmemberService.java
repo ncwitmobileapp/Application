@@ -16,17 +16,9 @@ public class TechicksmemberService {
 	        Logger.getLogger(DeviceInfo.class.getName());
 	
 	@ServiceMethod
-	public String createTechicksmember(Techicksmember member)
-	{
-
-		DataStore db= new DataStore();
-		if (db.find(member.getUserName())==null)
-		{
-			db.updateTechicksmember(member);
-			return "Member Created!";
-		}
-		return "Member Already Existed!";
-		
+	public static Techicksmember createTechicksmember(Techicksmember member) {
+		log.info("CreateTechicksmember called");
+		return db.updateTechicksmember(member);
 	}
 
 	@ServiceMethod

@@ -13,11 +13,18 @@ withOperation(new OperationKey("Rpr84edFY8ys6uY$gFE2PFQHt5Q="),
   .withMethodName("createTechicksmember")
   .withRequestContext("com.ncwitmobileapp.shared.TechicksmemberRequest")
   .build());
-withOperation(new OperationKey("TtcvXW_L3VY$2C57ZsZDiHUmyZI="),
+withOperation(new OperationKey("aTkjXi7Z47SXEQYbycMrcuYBSM0="),
   new OperationData.Builder()
-  .withClientMethodDescriptor("(Ljava/lang/Long;)Lcom/google/web/bindery/requestfactory/shared/Request;")
-  .withDomainMethodDescriptor("(Ljava/lang/Long;)Lcom/ncwitmobileapp/server/Techicksmember;")
+  .withClientMethodDescriptor("(Ljava/lang/String;)Lcom/google/web/bindery/requestfactory/shared/Request;")
+  .withDomainMethodDescriptor("(Ljava/lang/String;)Lcom/ncwitmobileapp/server/Techicksmember;")
   .withMethodName("readTechicksmember")
+  .withRequestContext("com.ncwitmobileapp.shared.TechicksmemberRequest")
+  .build());
+withOperation(new OperationKey("ociXdSeU2uRdvx$z8pL$nANaVrw="),
+  new OperationData.Builder()
+  .withClientMethodDescriptor("(Ljava/lang/String;Ljava/lang/String;)Lcom/google/web/bindery/requestfactory/shared/Request;")
+  .withDomainMethodDescriptor("(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;")
+  .withMethodName("getAuthenticatedTechicksmember")
   .withRequestContext("com.ncwitmobileapp.shared.TechicksmemberRequest")
   .build());
 withOperation(new OperationKey("4O4IbWNw2_6sa9iOnLf0_XDoK7I="),
