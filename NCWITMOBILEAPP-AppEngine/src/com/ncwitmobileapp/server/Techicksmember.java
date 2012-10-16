@@ -2,6 +2,8 @@
 package com.ncwitmobileapp.server;
 
 import java.sql.Time;
+import java.util.List;
+
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -29,6 +31,7 @@ public class Techicksmember extends Object
 	private String firstName;
 	private String lastName;
 	private Time timestamp;
+	private List<Award> awards;
 	
 
 	public Boolean getNCWITmember()
@@ -87,6 +90,10 @@ public class Techicksmember extends Object
 	public Time getTimestamp()
 	{
 		return timestamp;
+	}
+	public List<Award> getAwards()
+	{
+		return awards;
 	}
 	public Techicksmember()
 	{
@@ -155,6 +162,12 @@ public class Techicksmember extends Object
 	public void setTimestamp(Time timestamp)
 	{
 		this.timestamp=timestamp;
+	}
+	
+	public List<Award> setAwards(Award award)
+	{
+		 awards.add(award);
+		 return(awards);	
 	}
 
 	@Override

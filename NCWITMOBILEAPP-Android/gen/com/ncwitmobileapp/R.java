@@ -33,148 +33,173 @@ public final class R {
         public static final int whiteline=0x7f02000f;
     }
     public static final class id {
-        public static final int AcceptTOS=0x7f080058;
-        public static final int Birthday=0x7f080053;
-        public static final int BirthdayLayout=0x7f080052;
-        public static final int EnterSecurityAnswer=0x7f080056;
-        public static final int FailedMessage=0x7f08000b;
-        public static final int FirstName=0x7f08004a;
-        public static final int HaveCode=0x7f080050;
-        public static final int LastName=0x7f08004b;
-        public static final int PasswordConfirm=0x7f08004d;
-        public static final int ReferralCode=0x7f080051;
-        public static final int ReferralLayout=0x7f08004f;
-        public static final int RegisterButton=0x7f08005a;
-        public static final int SecurityQuestion=0x7f080055;
-        public static final int SelectBirthday=0x7f080054;
-        public static final int Terms=0x7f080059;
-        public static final int Winner=0x7f08004e;
-        public static final int backtologin=0x7f08000c;
-        public static final int birthday=0x7f08001c;
-        public static final int button3=0x7f080046;
-        public static final int button4=0x7f080047;
-        public static final int buttonGenerate=0x7f080042;
-        public static final int checkBox1=0x7f08002a;
-        public static final int checkBox2=0x7f080032;
-        public static final int checkBox3=0x7f08003a;
+        public static final int AcceptTOS=0x7f080061;
+        public static final int Birthday=0x7f08005c;
+        public static final int BirthdayLayout=0x7f08005b;
+        public static final int EnterSecurityAnswer=0x7f08005f;
+        public static final int FailedMessage=0x7f080040;
+        public static final int FirstName=0x7f080053;
+        public static final int HaveCode=0x7f080059;
+        public static final int LastName=0x7f080054;
+        public static final int PasswordConfirm=0x7f080056;
+        public static final int ReferralCode=0x7f08005a;
+        public static final int ReferralLayout=0x7f080058;
+        public static final int RegisterButton=0x7f080063;
+        public static final int SecurityQuestion=0x7f08005e;
+        public static final int SelectBirthday=0x7f08005d;
+        public static final int Terms=0x7f080062;
+        public static final int Winner=0x7f080057;
+        public static final int addYearNational=0x7f080032;
+        public static final int addYearRegional=0x7f080036;
+        public static final int backtologin=0x7f080041;
+        public static final int birthday=0x7f08000e;
+        public static final int button3=0x7f080050;
+        public static final int button4=0x7f080051;
+        public static final int buttonGenerate=0x7f080037;
+        public static final int buttoncancel=0x7f08003e;
+        public static final int buttonrefcancel=0x7f08003c;
+        public static final int buttonrefshare=0x7f08003b;
+        public static final int buttonsave=0x7f08003f;
+        public static final int checkBox1=0x7f08001c;
+        public static final int checkBox2=0x7f080024;
+        public static final int checkBox3=0x7f08002c;
         public static final int connect=0x7f080006;
         public static final int connect_footer=0x7f080005;
         public static final int connect_text=0x7f080001;
-        public static final int copyright=0x7f080018;
-        public static final int da=0x7f080020;
-        public static final int day=0x7f08001f;
-        public static final int description=0x7f08002e;
-        public static final int description2=0x7f080036;
+        public static final int copyright=0x7f08004c;
+        public static final int da=0x7f080012;
+        public static final int day=0x7f080011;
+        public static final int description=0x7f080020;
+        public static final int description2=0x7f080028;
         public static final int disconnect=0x7f080009;
         public static final int disconnect_footer=0x7f080008;
         public static final int disconnect_text=0x7f080007;
         public static final int divider=0x7f080003;
-        public static final int editTextYearNational=0x7f08003d;
-        public static final int editTextYearRegional=0x7f080040;
-        public static final int emailAddress=0x7f08004c;
-        public static final int firstName=0x7f08001a;
-        public static final int forgotpassword=0x7f080015;
+        public static final int editTextYearNational=0x7f080031;
+        public static final int editTextYearRegional=0x7f080034;
+        public static final int emailAddress=0x7f080055;
+        public static final int firstName=0x7f08000c;
+        public static final int forgotpassword=0x7f080049;
         public static final int header=0x7f080000;
-        public static final int hello_world=0x7f08000f;
-        public static final int hello_world_info=0x7f08000d;
-        public static final int imageButton1=0x7f080019;
+        public static final int hello_world=0x7f080044;
+        public static final int hello_world_info=0x7f080042;
+        public static final int imageButton1=0x7f08004d;
         public static final int imageView1=0x7f08000a;
-        public static final int imageView2=0x7f080044;
-        public static final int lastName=0x7f08001b;
-        public static final int linearLayout1=0x7f08003f;
-        public static final int linearLayoutReferralCode=0x7f080043;
-        public static final int linearLayoutSaveCancel=0x7f080048;
-        public static final int linearLayoutShareCancelReferral=0x7f080045;
-        public static final int login=0x7f080017;
-        public static final int mo=0x7f08001e;
-        public static final int month=0x7f08001d;
-        public static final int months=0x7f080031;
-        public static final int months2=0x7f080039;
-        public static final int newSchool=0x7f08003b;
-        public static final int newSchoools=0x7f080034;
-        public static final int newWP=0x7f080033;
-        public static final int password=0x7f080014;
-        public static final int radioButtonRunnerUpNational=0x7f08003c;
-        public static final int radioButtonRunnerUpRegional=0x7f08003e;
-        public static final int register=0x7f080016;
-        public static final int say_hello=0x7f08000e;
-        public static final int schoolName=0x7f080035;
-        public static final int scrollView1=0x7f080049;
+        public static final int imageView2=0x7f080039;
+        public static final int lastName=0x7f08000d;
+        public static final int linearLayout1=0x7f080033;
+        public static final int linearLayoutReferralCode=0x7f080038;
+        public static final int linearLayoutSaveCancel=0x7f08003d;
+        public static final int linearLayoutShareCancelReferral=0x7f08003a;
+        public static final int login=0x7f08004b;
+        public static final int mo=0x7f080010;
+        public static final int month=0x7f08000f;
+        public static final int months=0x7f080023;
+        public static final int months2=0x7f08002b;
+        public static final int newSchool=0x7f08002d;
+        public static final int newSchoools=0x7f080026;
+        public static final int newWP=0x7f080025;
+        public static final int password=0x7f080048;
+        public static final int radioButtonRunnerUpNational=0x7f08004e;
+        public static final int radioButtonRunnerUpRegional=0x7f08004f;
+        public static final int rdbRunnerUpNational=0x7f080030;
+        public static final int rdbWinner=0x7f08002f;
+        public static final int rdgroup1=0x7f08002e;
+        public static final int register=0x7f08004a;
+        public static final int say_hello=0x7f080043;
+        public static final int schoolName=0x7f080027;
+        public static final int scrollView1=0x7f080052;
         public static final int select_account=0x7f080004;
         public static final int select_text=0x7f080002;
-        public static final int show1=0x7f080023;
-        public static final int show10=0x7f08002d;
-        public static final int show11=0x7f08002f;
-        public static final int show2=0x7f080024;
-        public static final int show3=0x7f080025;
-        public static final int show4=0x7f080026;
-        public static final int show5=0x7f080027;
-        public static final int show6=0x7f080028;
-        public static final int show7=0x7f080029;
-        public static final int show8=0x7f08002b;
-        public static final int show9=0x7f08002c;
-        public static final int stateSpinner=0x7f080041;
-        public static final int textView1=0x7f080010;
-        public static final int time2=0x7f080037;
-        public static final int timeLeft=0x7f080011;
-        public static final int title=0x7f080012;
-        public static final int tosLayout=0x7f080057;
-        public static final int username=0x7f080013;
-        public static final int ye=0x7f080022;
-        public static final int year=0x7f080021;
-        public static final int years=0x7f080030;
-        public static final int years2=0x7f080038;
+        public static final int show1=0x7f080015;
+        public static final int show10=0x7f08001f;
+        public static final int show11=0x7f080021;
+        public static final int show2=0x7f080016;
+        public static final int show3=0x7f080017;
+        public static final int show4=0x7f080018;
+        public static final int show5=0x7f080019;
+        public static final int show6=0x7f08001a;
+        public static final int show7=0x7f08001b;
+        public static final int show8=0x7f08001d;
+        public static final int show9=0x7f08001e;
+        public static final int stateSpinner=0x7f080035;
+        public static final int textView1=0x7f08000b;
+        public static final int time2=0x7f080029;
+        public static final int timeLeft=0x7f080045;
+        public static final int title=0x7f080046;
+        public static final int tosLayout=0x7f080060;
+        public static final int username=0x7f080047;
+        public static final int ye=0x7f080014;
+        public static final int year=0x7f080013;
+        public static final int years=0x7f080022;
+        public static final int years2=0x7f08002a;
     }
     public static final class layout {
         public static final int account=0x7f030000;
         public static final int connect=0x7f030001;
         public static final int disconnect=0x7f030002;
-        public static final int failedlogin=0x7f030003;
-        public static final int hello_world=0x7f030004;
-        public static final int lockoutpage=0x7f030005;
-        public static final int logins=0x7f030006;
-        public static final int profile=0x7f030007;
-        public static final int registration=0x7f030008;
+        public static final int edit_profile=0x7f030003;
+        public static final int failedlogin=0x7f030004;
+        public static final int hello_world=0x7f030005;
+        public static final int lockoutpage=0x7f030006;
+        public static final int logins=0x7f030007;
+        public static final int profile=0x7f030008;
+        public static final int registration=0x7f030009;
     }
     public static final class menu {
         public static final int main_menu=0x7f070000;
     }
     public static final class string {
+        public static final int Awards=0x7f050041;
         public static final int Birthday=0x7f05001d;
+        public static final int Cancel=0x7f050036;
         public static final int Copyright1=0x7f050027;
         public static final int EmailAddress=0x7f050018;
         public static final int Example=0x7f050029;
         public static final int FirstName=0x7f050022;
         public static final int ForgotPassword=0x7f050025;
+        public static final int Generate=0x7f050039;
+        public static final int GenerateReferralMessage=0x7f05003b;
         public static final int LastName=0x7f050023;
         public static final int LockoutValues=0x7f05002d;
         public static final int Login=0x7f050028;
         public static final int Logo=0x7f050024;
+        public static final int NCWITNatAward=0x7f05003f;
+        public static final int NCWITRegAffAward=0x7f05003d;
         public static final int NCWITWinner=0x7f05001b;
         public static final int Password=0x7f050019;
         public static final int PasswordConfirm=0x7f05001a;
         public static final int Pleasetryagain=0x7f05002c;
         public static final int ReferralCode=0x7f05001c;
+        public static final int ReferralExplanation=0x7f05003a;
         public static final int Register=0x7f050026;
         public static final int RegisterButton=0x7f050021;
         public static final int Registration=0x7f050017;
+        public static final int RunnerUp=0x7f05003e;
+        public static final int Save=0x7f050037;
         public static final int SecurityAnswer=0x7f05001f;
         public static final int SecurityQuestion=0x7f05002e;
         public static final int SelectBDay=0x7f05001e;
+        public static final int Share=0x7f050038;
         public static final int TOS=0x7f050020;
+        public static final int Winner=0x7f050040;
+        public static final int Year=0x7f05003c;
         /**  Menu item text [CHAR LIMIT=NONE] 
          */
         public static final int accounts=0x7f050000;
+        public static final int addYear=0x7f050033;
         /**  Dialog button [CHAR LIMIT=NONE] 
          */
         public static final int add_account=0x7f050001;
         /**   Name of the application in the launcher [CHAR LIMIT=NONE] 
          */
         public static final int app_name=0x7f050002;
+        public static final int attending=0x7f05005a;
         /**  Dialog title text [CHAR LIMIT=NONE] 
          */
         public static final int attention=0x7f050003;
         public static final int backtologin=0x7f05002b;
+        public static final int bday=0x7f050043;
         /**  Button text [CHAR LIMIT=NONE] 
          */
         public static final int connect=0x7f050004;
@@ -190,6 +215,9 @@ public final class R {
         /**  Message text [CHAR LIMIT=NONE] 
          */
         public static final int contacting_server=0x7f050008;
+        public static final int day=0x7f050045;
+        public static final int description1=0x7f050052;
+        public static final int description2=0x7f050059;
         /**  Button text [CHAR LIMIT=NONE] 
          */
         public static final int disconnect=0x7f050009;
@@ -202,16 +230,28 @@ public final class R {
         /**  Footer text for "Disconnect" screen [CHAR LIMIT=NONE] 
          */
         public static final int do_you_want_to_disconnect=0x7f05000c;
+        public static final int dontShowBday=0x7f050049;
+        public static final int editProfile=0x7f050042;
+        public static final int educator=0x7f05004b;
         public static final int failedMessage=0x7f05002a;
+        public static final int firstName=0x7f050034;
         /**  Initial "hello, world" informational message [CHAR LIMIT=NONE] 
          */
         public static final int hello_world_info_text=0x7f05000d;
         /**  Initial "hello, world" response message [CHAR LIMIT=NONE] 
          */
         public static final int hello_world_text=0x7f05000e;
+        public static final int interests=0x7f05004f;
+        public static final int lastName=0x7f050035;
+        public static final int location=0x7f05004d;
+        public static final int month=0x7f050044;
+        public static final int months=0x7f050055;
+        public static final int name=0x7f050051;
         /**  Dialog message text [CHAR LIMIT=NONE] 
          */
         public static final int needs_account=0x7f05000f;
+        public static final int professional=0x7f05004c;
+        public static final int referFriend=0x7f050032;
         /**  Notification message [CHAR LIMIT=NONE] 
          */
         public static final int regional_affiliate=0x7f050015;
@@ -224,9 +264,14 @@ public final class R {
         /**  Button text [CHAR LIMIT=NONE] 
          */
         public static final int say_hello=0x7f050012;
+        public static final int school=0x7f05005b;
+        public static final int schools=0x7f050058;
         /**  List view header text [CHAR LIMIT=NONE] 
          */
         public static final int select_account=0x7f050013;
+        public static final int showBday=0x7f050047;
+        public static final int showLocation=0x7f05004e;
+        public static final int showMonth=0x7f050048;
         /**  Dialog button text [CHAR LIMIT=NONE] 
          */
         public static final int skip=0x7f050014;
@@ -236,10 +281,17 @@ public final class R {
         /**  Strings for State Spinner 
          */
         public static final int state_prompt=0x7f05002f;
+        public static final int student=0x7f05004a;
         public static final int techicks=0x7f050031;
+        public static final int timeThere=0x7f050053;
         /**  Notification message [CHAR LIMIT=NONE] 
          */
         public static final int unregistration_succeeded=0x7f050016;
+        public static final int working=0x7f050056;
+        public static final int workplace=0x7f050057;
+        public static final int workplaces=0x7f050050;
+        public static final int year=0x7f050046;
+        public static final int years=0x7f050054;
     }
     public static final class style {
         public static final int heading=0x7f040000;

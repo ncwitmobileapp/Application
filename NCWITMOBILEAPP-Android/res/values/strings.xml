@@ -154,5 +154,47 @@
     
     <string name="slogan">By Girls. For Girls.</string>
     <string name="techicks">Techicks</string>
+    <string name="referFriend">Refer a Friend!</string> 
+  <string name="addYear">Add Year</string> 
+  <string name="firstName">First Name</string> 
+  <string name="lastName">Last Name</string> 
+  <string name="Cancel">Cancel</string> 
+  <string name="Save">Save</string> 
+  <string name="Share">Share</string> 
+  <string name="Generate">Generate!</string> 
+  <string name="ReferralExplanation">Referral codes are only active for 14 days. Your friend must download this app and enter the referral code at the time of registration in order to activate their account. Clicking below signifies that you understand:</string> 
+  <string name="GenerateReferralMessage">Generate a referral code here:</string> 
+  <string name="Year">Year</string> 
+  <string name="NCWITRegAffAward">NCWIT Regional Affiliate Award</string> 
+  <string name="RunnerUp">Runner-Up</string> 
+  <string name="NCWITNatAward">NCWIT National Award</string> 
+  <string name="Winner">Winner</string> 
+  <string name="Awards">Awards</string> 
+  <string name="editProfile">Edit Profile</string> 
+  <string name="bday">Birthday-</string> 
+  <string name="month">Month:</string> 
+  <string name="day">Day:</string> 
+  <string name="year">Year:</string> 
+  <string name="showBday">Show Birthday</string> 
+  <string name="showMonth">Show only Month and Day</string> 
+  <string name="dontShowBday">Don\'t show Birthday</string> 
+  <string name="student">Student</string> 
+  <string name="educator">Educator</string> 
+  <string name="professional">Professional</string> 
+  <string name="location">Location</string> 
+  <string name="showLocation">Show Location?</string> 
+  <string name="interests">Interests</string> 
+  <string name="workplaces">Workplaces</string> 
+  <string name="name">Name</string> 
+  <string name="description1">Description(Location, Job Discription, etc.)</string> 
+  <string name="timeThere">Time There:</string> 
+  <string name="years">Years</string> 
+  <string name="months">Months</string> 
+  <string name="working">Currently Working Here?</string> 
+  <string name="workplace">Add a new Workplace</string> 
+  <string name="schools">Schools</string> 
+  <string name="description2">Description(Location, Major, Activities, etc.)</string> 
+  <string name="attending">Currently Attenting?</string> 
+  <string name="school">Add a new School</string> 
     
 </resources>
