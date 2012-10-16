@@ -19,6 +19,6 @@ public interface TechicksmemberRequest extends RequestContext {
 
 	Request<List<TechicksmemberProxy>> queryTechicksmembers();
 	
-	Request<String> getAuthenticatedTechicksmember(String userName, String password);
+	Request<TechicksmemberProxy> getAuthenticatedTechicksmember(String userName, String password);
 
 }
