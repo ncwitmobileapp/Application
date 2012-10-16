@@ -9,7 +9,7 @@ import com.google.web.bindery.requestfactory.shared.ServiceName;
 @ServiceName(value = "com.ncwitmobileapp.server.TechicksmemberService", locator = "com.ncwitmobileapp.server.TechicksmemberServiceLocator")
 public interface TechicksmemberRequest extends RequestContext {
 
-	Request<String> createTechicksmember(TechicksmemberProxy member);
+	Request<TechicksmemberProxy> createTechicksmember(TechicksmemberProxy member);
 
 	Request<TechicksmemberProxy> readTechicksmember(String username);
 
@@ -19,6 +19,6 @@ public interface TechicksmemberRequest extends RequestContext {
 
 	Request<List<TechicksmemberProxy>> queryTechicksmembers();
 	
-	Request<String> getAuthenticatedTechicksmember(String userName, String password);
+	Request<TechicksmemberProxy> getAuthenticatedTechicksmember(String userName, String password);
 
 }

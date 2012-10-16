@@ -22,24 +22,28 @@ public class TechicksmemberService {
 	}
 
 	@ServiceMethod
-	public static String getAuthenticatedTechicksmember(String userName, String password) {
-		 log.info("Called authenticateTechicksmember");
+	public static Techicksmember getAuthenticatedTechicksmember(String userName, String password) {
+		 log.info("Called authenticateTechicksmember - trying to return member");
 		 log.info("userName = " + userName + " PassWord = " + password);
 		// return ("Success");
 		 
 		DataStore db = new DataStore();
 		Techicksmember member = db.find(userName);
 		log.info("Returning from Database");
+		
 		if (member==null){
 			log.info("No MAtch On Login");
-			return "Member not existant";
+			return member;
+		}  else{
+			    if (member.getUserPassword().equals(password)){
+			    log.info("Valid user id entered");
+		        } else {
+			        log.info("password is invlaid");
+			        member = null;
+		   }
 		}
-		if (member.getUserPassword().equals(password)){
-			log.info("Valid user id entered");
-			return "Identity validated!";
-		}
-		
-		return "Identity Invalidated";
+			
+		return member;
 		
 	}
 	

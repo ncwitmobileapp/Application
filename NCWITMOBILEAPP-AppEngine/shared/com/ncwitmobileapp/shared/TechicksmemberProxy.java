@@ -2,6 +2,7 @@ package com.ncwitmobileapp.shared;
 
 import com.google.web.bindery.requestfactory.shared.ProxyForName;
 import com.google.web.bindery.requestfactory.shared.ValueProxy;
+import java.util.*;
 
 @ProxyForName(value = "com.ncwitmobileapp.server.Techicksmember", locator = "com.ncwitmobileapp.server.TechicksmemberLocator")
 public interface TechicksmemberProxy extends ValueProxy {
@@ -23,6 +24,9 @@ public interface TechicksmemberProxy extends ValueProxy {
 	String getSecurityQuestion();
 
 	String getSecurityAnswer();
+	
+	List<AwardProxy> getAwards();
+
 
 	void setNCWITmember(boolean NCWITmember);
 

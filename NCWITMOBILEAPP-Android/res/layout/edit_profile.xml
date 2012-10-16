@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/background" android:scrollbars="none">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="#008fc0" android:orientation="vertical">
+  <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:adjustViewBounds="true" android:maxHeight="60dp" android:src="@drawable/banner1trans" /> 
+  <TextView android:id="@+id/textView1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center" android:gravity="center_horizontal" android:text="@string/editProfile" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#FF8F00" android:textSize="35dp" /> 
+  <EditText android:id="@+id/firstName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:background="@drawable/greengradient" android:ems="10" android:hint="@string/FirstName" android:inputType="textPersonName" android:textColor="#565051" android:textColorHint="#565051" /> 
+  <EditText android:id="@+id/lastName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:background="@drawable/greengradient" android:ems="10" android:hint="@string/LastName" android:inputType="textPersonName" android:textColor="#565051" android:textColorHint="#565051" /> 
+  <TextView android:id="@+id/birthday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="@string/bday" android:textColor="#FFFFFF" android:textSize="18dp" /> 
+<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+  <TextView android:id="@+id/month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="@string/month" android:textColor="#FFFFFF" android:textSize="18dp" /> 
+  <EditText android:id="@+id/mo" android:layout_width="30dp" android:layout_height="wrap_content" android:background="@drawable/greengradient" android:ems="10" android:hint="XX" android:inputType="number" android:textColor="#565051" android:textColorHint="#565051" android:textSize="18dp" /> 
+  <TextView android:id="@+id/day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="@string/day" android:textColor="#FFFFFF" android:textSize="18dp" /> 
+  <EditText android:id="@+id/da" android:layout_width="30dp" android:layout_height="wrap_content" android:background="@drawable/greengradient" android:ems="10" android:hint="XX" android:inputType="number" android:textColor="#565051" android:textColorHint="#565051" android:textSize="18dp" /> 
+  <TextView android:id="@+id/year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="@string/year" android:textColor="#FFFFFF" android:textSize="18dp" /> 
+  <EditText android:id="@+id/ye" android:layout_width="50dp" android:layout_height="wrap_content" android:background="@drawable/greengradient" android:ems="10" android:hint="XXXX" android:inputType="number" android:textColor="#565051" android:textColorHint="#565051" android:textSize="18dp" /> 
+  </TableRow>
+  <RadioButton android:id="@+id/show1" android:layout_width="wrap_content" android:layout_height="24dp" android:text="@string/showBday" android:textColor="#FFFFFF" /> 
+  <RadioButton android:id="@+id/show2" android:layout_width="wrap_content" android:layout_height="24dp" android:text="@string/showMonth" android:textColor="#FFFFFF" /> 
+  <RadioButton android:id="@+id/show3" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_marginBottom="15sp" android:text="@string/dontShowBday" android:textColor="#FFFFFF" /> 
+  <RadioButton android:id="@+id/show4" android:layout_width="wrap_content" android:layout_height="24dp" android:text="@string/student" android:textColor="#FFFFFF" /> 
+  <RadioButton android:id="@+id/show5" android:layout_width="wrap_content" android:layout_height="24dp" android:text="@string/educator" android:textColor="#FFFFFF" /> 
+  <RadioButton android:id="@+id/show6" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_marginBottom="5dp" android:text="@string/professional" android:textColor="#FFFFFF" /> 
+  <EditText android:id="@+id/show7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:background="@drawable/greengradient" android:ems="10" android:hint="@string/location" android:inputType="textPersonName" android:textColor="#565051" android:textColorHint="#565051" /> 
+  <CheckBox android:id="@+id/checkBox1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/showLocation" /> 
+  <EditText android:id="@+id/show8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:background="@drawable/greengradient" android:hint="@string/interests" android:inputType="textPersonName" android:lineSpacingExtra="5dp" android:minHeight="100sp" android:textColor="#565051" android:textColorHint="#565051" /> 
+  <TextView android:id="@+id/show9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="5dp" android:text="@string/workplaces" android:textColor="#FFFFFF" android:textSize="14dp" /> 
+  <EditText android:id="@+id/show10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:background="@drawable/greengradient" android:hint="@string/name" android:inputType="textPersonName" android:textColor="#565051" android:textColorHint="#565051" android:textSize="14dp" /> 
+  <EditText android:id="@+id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:background="@drawable/greengradient" android:hint="@string/description1" android:inputType="textPersonName" android:minHeight="100dp" android:textColor="#565051" android:textColorHint="#565051" android:textSize="14dp" /> 
+  <TextView android:id="@+id/show11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="@string/timeThere" android:textColor="#FFFFFF" android:textSize="14dp" /> 
+<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+  <EditText android:id="@+id/years" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginRight="5sp" android:background="@drawable/greengradient" android:ems="10" android:hint="@string/years" android:inputType="number" android:textColor="#565051" android:textColorHint="#565051" android:textSize="14dp" /> 
+  <EditText android:id="@+id/months" android:layout_width="55dp" android:layout_height="wrap_content" android:background="@drawable/greengradient" android:ems="10" android:hint="@string/months" android:inputType="number" android:textColor="#565051" android:textColorHint="#565051" android:textSize="14dp" /> 
+  <CheckBox android:id="@+id/checkBox2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/working" android:textSize="14dp" /> 
+  </TableRow>
+  <Button android:id="@+id/newWP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="5dp" android:text="@string/workplace" android:textColor="#ffffff" android:textSize="14dp" android:textStyle="bold" /> 
+  <TextView android:id="@+id/newSchoools" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="5dp" android:text="@string/schools" android:textColor="#FFFFFF" android:textSize="14dp" /> 
+  <EditText android:id="@+id/schoolName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:background="@drawable/greengradient" android:hint="@string/name" android:inputType="textPersonName" android:textColor="#565051" android:textColorHint="#565051" android:textSize="14dp" /> 
+  <EditText android:id="@+id/description2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:background="@drawable/greengradient" android:hint="@string/description2" android:inputType="textPersonName" android:minHeight="100dp" android:textColor="#565051" android:textColorHint="#565051" android:textSize="14dp" /> 
+  <TextView android:id="@+id/time2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="@string/timeThere" android:textColor="#FFFFFF" android:textSize="14dp" /> 
+<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+  <EditText android:id="@+id/years2" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:background="@drawable/greengradient" android:ems="10" android:hint="@string/years" android:inputType="number" android:textColor="#565051" android:textColorHint="#565051" android:textSize="14dp" /> 
+  <EditText android:id="@+id/months2" android:layout_width="55dp" android:layout_height="wrap_content" android:background="@drawable/greengradient" android:ems="10" android:hint="@string/months" android:inputType="number" android:textColor="#565051" android:textColorHint="#565051" android:textSize="14dp" /> 
+  <CheckBox android:id="@+id/checkBox3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/attending" android:textSize="14dp" /> 
+  </TableRow>
+  <Button android:id="@+id/newSchool" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="5sp" android:text="@string/school" android:textColor="#ffffff" android:textSize="14dp" android:textStyle="bold" /> 
+<!--  MICHELLE'S CODE STARTS HERE 
+  --> 
+  <TextView style="@style/heading" android:paddingBottom="5dp" android:text="@string/Awards" android:textColor="#FF8F00" /> 
+  <TextView style="@style/subheading" android:text="@string/NCWITNatAward" /> 
+<RadioGroup android:id="@+id/rdgroup1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+  <RadioButton android:id="@+id/rdbWinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Winner" />
+
+  <RadioButton
+      android:id="@+id/rdbRunnerUpNational"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/RunnerUp" />
+ 
+  </RadioGroup>
+  <EditText android:id="@+id/editTextYearNational" android:layout_width="100dp" android:layout_height="wrap_content" android:background="@drawable/greengradient" android:hint="@string/Year" android:inputType="number" android:textColorHint="#565051" />
+
+  <TextView
+      android:id="@+id/addYearNational"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:clickable="true"
+      android:paddingBottom="5dp"
+      android:text="@string/addYear"
+      android:textColor="#FFFFFF" />
+ 
+<!--  Add underlining 
+  --> 
+  <TextView style="@style/subheading" android:text="@string/NCWITRegAffAward" /> 
+<!--  NEW HORIZONTAL LAYOUT FOR YEAR SECTION 
+  --> 
+<LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+  <EditText android:id="@+id/editTextYearRegional" android:layout_width="100dp" android:layout_height="wrap_content" android:background="@drawable/greengradient" android:hint="@string/Year" android:inputType="number" android:textColorHint="#565051" /> 
+<!--  need to fix drop down menu; check java file; string = state_prompt 
+  --> 
+  </LinearLayout>
+<!--  END OF EXTRA LINEAR LAYOUT 
+  --> 
+  <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/state_prompt" android:textColor="#ffffff" /> 
+  <Spinner android:id="@+id/stateSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:entries="@array/states_array" android:prompt="@string/state_prompt" android:textColor="#ffffff" android:textStyle="bold" /> 
+  <TextView android:id="@+id/addYearRegional" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingBottom="5dp" android:text="@string/addYear" android:textColor="#FFFFFF" /> 
+<!--  Add underlining 
+  --> 
+  <TextView style="@style/heading" android:paddingBottom="5dp" android:text="@string/referFriend" android:textColor="#FF8F00" /> 
+  <TextView style="@style/subheading" android:text="@string/GenerateReferralMessage" /> 
+  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ReferralExplanation" android:textColor="#FFFFFF" /> 
+  <Button android:id="@+id/buttonGenerate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="@string/Generate" android:textColor="#ffffff" android:textStyle="bold" /> 
+<!--  Start of Code Box 
+  --> 
+<LinearLayout android:id="@+id/linearLayoutReferralCode" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:background="@drawable/graybackground" android:orientation="vertical">
+  <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="left" android:src="@drawable/referralcodetitle" /> 
+  <ImageView android:id="@+id/imageView2" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:src="@drawable/whiteline" /> 
+<!--  Draw in referral code when you find out how 
+  --> 
+<LinearLayout android:id="@+id/linearLayoutShareCancelReferral" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:orientation="horizontal">
+  <Button android:id="@+id/buttonrefshare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="left" android:text="@string/Share" android:textColor="#ffffff" android:textStyle="bold" /> 
+  <Button android:id="@+id/buttonrefcancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="85dp" android:gravity="right" android:text="@string/Cancel" android:textColor="#ffffff" android:textStyle="bold" /> 
+  </LinearLayout>
+  </LinearLayout>
+<LinearLayout android:id="@+id/linearLayoutSaveCancel" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+  <Button android:id="@+id/buttoncancel" android:layout_width="130dp" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:gravity="left" android:text="@string/Cancel" android:textColor="#ffffff" android:textStyle="bold" /> 
+  <Button android:id="@+id/buttonsave" android:layout_width="130dp" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:gravity="right" android:text="@string/Save" android:textColor="#ffffff" android:textStyle="bold" /> 
+  </LinearLayout>
+  </LinearLayout>
+  </ScrollView>
