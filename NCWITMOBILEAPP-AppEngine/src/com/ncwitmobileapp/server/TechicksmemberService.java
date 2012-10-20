@@ -38,7 +38,7 @@ public class TechicksmemberService {
 			    if (member.getUserPassword().equals(password)){
 			    log.info("Valid user id entered");
 		        } else {
-			        log.info("password is invlaid");
+			        log.info("password is invalid");
 			        member = null;
 		   }
 		}

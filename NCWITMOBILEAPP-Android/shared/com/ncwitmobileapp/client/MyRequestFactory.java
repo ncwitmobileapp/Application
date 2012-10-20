@@ -43,9 +43,9 @@ public interface MyRequestFactory extends RequestFactory {
 				String password);
 	}
 	
-	@ServiceName("com.ncwitmobileapp.server.TechicksmeberService")
+	@ServiceName("com.ncwitmobileapp.server.TechicksmemberService")
 	public interface TechicksmemberRequest extends RequestContext {
-		InstanceRequest<TechicksmemberProxy, Void> getAuthenticatedTechicksmember(String userName,
+		Request<TechicksmemberProxy> getAuthenticatedTechicksmember(String userName,
 				String password);
 	}
 
@@ -79,5 +79,5 @@ public interface MyRequestFactory extends RequestFactory {
 
 	NCWITMOBILEAPPRequest nCWITMOBILEAPPRequest();
 
-	
+	TechicksmemberRequest techicksmemberRequest();
 }	
