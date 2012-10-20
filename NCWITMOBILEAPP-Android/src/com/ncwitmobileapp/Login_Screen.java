@@ -3,6 +3,8 @@ import com.ncwitmobileapp.R;
 import com.ncwitmobileapp.client.MyRequestFactory;
 import com.ncwitmobileapp.client.MyRequestFactory.HelloWorldRequest;
 import com.ncwitmobileapp.client.MyRequestFactory.NCWITMOBILEAPPRequest;
+import com.ncwitmobileapp.client.MyRequestFactory.TechicksmemberRequest;
+import com.ncwitmobileapp.shared.TechicksmemberProxy;
 
 
 import com.google.web.bindery.requestfactory.shared.Receiver;
@@ -68,21 +70,22 @@ public class Login_Screen extends Activity
                     protected String doInBackground(Void... arg0) {
                     	
                         MyRequestFactory requestFactory = Util.getRequestFactory(mContext, MyRequestFactory.class);
-                        final NCWITMOBILEAPPRequest request = requestFactory.nCWITMOBILEAPPRequest();
+                        final TechicksmemberRequest request = requestFactory.techicksmemberRequest();
                         Log.i(TAG, "Sending request to server");
-                        request.getAuthenticatedTechicksmember(username, password).fire(new Receiver<String>() {
+                        request.getAuthenticatedTechicksmember(username, password).fire(new Receiver<TechicksmemberProxy>() {
                             @Override
                             public void onFailure(ServerFailure error) {
                                 message = "Failure: " + error.getMessage();
                             }
 
                             @Override
-                            public void onSuccess(String result) {
-                                message = result;
+                            public void onSuccess(TechicksmemberProxy result) {
+                                
                                 Log.i(TAG,"got back a hello world message");
+                                Looper.prepare();
                                 
                                 
-                                if (message=="Member not existant"){
+                                if (result==null){
                                 	loginAttempts++;
                                 	
                                 	showToast("Invalid login information. You have "+(MAX_ATTEMPTS-loginAttempts)+" attempts remaining.");
@@ -93,9 +96,14 @@ public class Login_Screen extends Activity
                                 	}
                                 }else{
                                 	loginAttempts=0;
+                                	String name = result.getUserName();
+                                	Log.i(TAG,"Name = "+name);
+                                	showToast("User name = "+name+" was returned"); 
                                 
                                 	/*Redirect to profile page of the particular user*/
                                 }
+                                message="success";
+                                Looper.loop();
                             }
                         });
                         Looper.prepare();

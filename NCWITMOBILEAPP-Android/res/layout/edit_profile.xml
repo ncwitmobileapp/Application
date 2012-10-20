@@ -48,7 +48,12 @@
   <TextView style="@style/heading" android:paddingBottom="5dp" android:text="@string/Awards" android:textColor="#FF8F00" /> 
   <TextView style="@style/subheading" android:text="@string/NCWITNatAward" /> 
 <RadioGroup android:id="@+id/rdgroup1" android:layout_width="fill_parent" android:layout_height="wrap_content">
-  <RadioButton android:id="@+id/rdbWinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Winner" />
+
+    <RadioButton
+        android:id="@+id/rdbWinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Winner" />
 
   <RadioButton
       android:id="@+id/rdbRunnerUpNational"
