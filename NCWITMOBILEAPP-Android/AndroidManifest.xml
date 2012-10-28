@@ -45,6 +45,7 @@
         
         <activity android:name=".LockOutScreen"></activity>
         <activity android:name=".RegistrationPage"></activity>
+        <activity android:name=".EditProfile"></activity>
        
 
         <!-- In order to use the C2DM library, an application must declare a class 

@@ -59,8 +59,6 @@ public class Login_Screen extends Activity
                
                 login.setEnabled(false);
                 Log.i(TAG, "preparing request to send to server");
-                login.setEnabled(false);
-                Log.i(TAG, "preparing request to send to server");
 
                 // Use an AsyncTask to avoid blocking the UI thread
                 new AsyncTask<Void, Void, String>() {
@@ -99,6 +97,8 @@ public class Login_Screen extends Activity
                                 	String name = result.getUserName();
                                 	Log.i(TAG,"Name = "+name);
                                 	showToast("User name = "+name+" was returned"); 
+                                	Intent myIntent = new Intent(getBaseContext(), EditProfile.class);
+                                	startActivity(myIntent);
                                 
                                 	/*Redirect to profile page of the particular user*/
                                 }
